@@ -1,2 +1,2 @@
 # AjudAi
-Repositório referente ao projeto da disciplina de PWI
+Repositório referente ao projeto da disciplina de PwebI
