@@ -11,15 +11,17 @@ public class Usuario {
     private String email;
     private String senha;
     private String[] telefone;
+    private boolean situacao;
 
     public Usuario(String nomeCompleto, String nomeUsuario, LocalDate dataNascimento, String email,
-                   String senha, String[] telefone) {
+                   String senha, String[] telefone, boolean situacao) {
         this.nomeCompleto = nomeCompleto;
         this.nomeUsuario = nomeUsuario;
         this.dataNascimento = dataNascimento;
         this.email = email;
         this.senha = senha;
         this.telefone = telefone;
+        this.situacao = situacao;
     }
 
     public int getCodigo() {
@@ -30,11 +32,11 @@ public class Usuario {
         this.codigo = codigo;
     }
 
-    public String getNome() {
+    public String getNomeCompleto() {
         return nomeCompleto;
     }
 
-    public void setNome(String nome) {
+    public void setNomeCompleto(String nome) {
         this.nomeCompleto = nome;
     }
 
@@ -76,6 +78,14 @@ public class Usuario {
 
     public void setTelefone(String[] telefone) {
         this.telefone = telefone;
+    }
+
+    public boolean isSituacao() {
+        return situacao;
+    }
+
+    public void setSituacao(boolean situacao) {
+        this.situacao = situacao;
     }
 
     @Override

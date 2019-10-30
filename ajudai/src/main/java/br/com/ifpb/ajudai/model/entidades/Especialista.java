@@ -7,8 +7,8 @@ public class Especialista extends Usuario {
     private String[] areas;
 
     public Especialista(String nome, String nomeUsuario, LocalDate dataNascimento, String email,
-                        String senha, String[] telefone, String descricao, String[] areas) {
-        super(nome, nomeUsuario, dataNascimento, email, senha, telefone);
+                        String senha, String[] telefone, boolean situacao, String descricao, String[] areas) {
+        super(nome, nomeUsuario, dataNascimento, email, senha, telefone,situacao);
         this.descricao = descricao;
         this.areas = areas;
     }

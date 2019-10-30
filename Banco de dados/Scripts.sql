@@ -5,6 +5,7 @@
 	DataNascimento DATE NOT NULL,
 	Email VARCHAR(100) NOT NULL,
 	Senha VARCHAR(100) NOT NULL,
+    Situacao BOOLEAN NOT NULL,
 	CONSTRAINT PK_Usuario PRIMARY KEY(Codigo)
 );
 
