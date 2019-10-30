@@ -1,6 +1,7 @@
 ﻿CREATE TABLE Usuario(
 	Codigo SERIAL,
-	Nome VARCHAR(200) NOT NULL,
+	NomeCompleto VARCHAR(200) NOT NULL,
+    NomeUsuario VARCHAR(200) NOT NULL,
 	DataNascimento DATE NOT NULL,
 	Email VARCHAR(100) NOT NULL,
 	Senha VARCHAR(100) NOT NULL,
@@ -57,6 +58,7 @@ CREATE TABLE Postagem(
 CREATE TABLE Comentario(
 	Codigo SERIAL,
 	IdPostagem INTEGER,
+    Descricao VARCHAR(500) NOT NULL,
 	DataComentario DATE NOT NULL,
 	CONSTRAINT PK_Comentario PRIMARY KEY(Codigo,IdPostagem),
 	CONSTRAINT FK_Comentario FOREIGN KEY(IdPostagem) REFERENCES Postagem(Id)
