@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fee4fc9b-c563-461a-bc0b-af7665dd3873" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,48 +24,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Usuario.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="875">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="200">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="729">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,26 +71,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="225">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +87,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -132,6 +117,8 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" />
       </list>
     </option>
@@ -163,7 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,6 +161,11 @@
             <path>
               <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
               <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -188,49 +180,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="conexaobd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entidades" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,18 +310,18 @@
       <updated>1572432683553</updated>
       <workItem from="1572432691624" duration="14689000" />
       <workItem from="1572538191197" duration="1011000" />
-      <workItem from="1572613067037" duration="1918000" />
+      <workItem from="1572613067037" duration="3469000" />
+      <workItem from="1572622932281" duration="3410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17618000" />
+    <option name="totallyTimeSpent" value="22579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1049" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14994664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15154749" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -514,20 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Conexao/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -580,34 +525,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Conexao/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state>
+          <caret column="58" lean-forward="true" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAO.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="875">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
           </folding>
         </state>
       </provider>
