@@ -6,9 +6,9 @@ public class Administrador extends Usuario {
     private LocalDate dataInicio;
     private LocalDate dataFim;
 
-    public Administrador(String nome, String nomeUsuario, LocalDate dataNascimento, String email, String senha,
-                         String[] telefone, boolean situacao, LocalDate dataInicio, LocalDate dataFim) {
-        super(nome, nomeUsuario, dataNascimento, email, senha, telefone, situacao);
+    public Administrador(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento, String email,
+                         String senha, String[] telefone, boolean situacao, LocalDate dataInicio, LocalDate dataFim) {
+        super(nomeUsuario, nomeCompleto, dataNascimento, email, senha, telefone, situacao);
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
     }

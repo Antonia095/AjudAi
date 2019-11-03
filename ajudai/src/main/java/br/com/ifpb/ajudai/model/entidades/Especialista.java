@@ -6,9 +6,9 @@ public class Especialista extends Usuario {
     private String descricao;
     private String[] areas;
 
-    public Especialista(String nome, String nomeUsuario, LocalDate dataNascimento, String email,
+    public Especialista(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento, String email,
                         String senha, String[] telefone, boolean situacao, String descricao, String[] areas) {
-        super(nome, nomeUsuario, dataNascimento, email, senha, telefone,situacao);
+        super(nomeUsuario, nomeCompleto, dataNascimento, email, senha, telefone, situacao);
         this.descricao = descricao;
         this.areas = areas;
     }

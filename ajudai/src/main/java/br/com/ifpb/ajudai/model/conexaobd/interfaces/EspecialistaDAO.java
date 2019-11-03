@@ -6,5 +6,5 @@ public interface EspecialistaDAO {
     boolean adicionarEspecialista(Especialista especialista);
     boolean removerEspecialista(Especialista especialista);
     boolean atualizarEspecialista(Especialista especialista);
-    Especialista buscarEspecialista(int id);
+    Especialista buscarEspecialista(String nomeUsuario);
 }

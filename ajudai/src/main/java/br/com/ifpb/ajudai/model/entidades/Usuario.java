@@ -4,40 +4,33 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Usuario {
-    private int codigo;
-    private String nomeCompleto;
     private String nomeUsuario;
+    private String nomeCompleto;
     private LocalDate dataNascimento;
     private String email;
     private String senha;
     private String[] telefone;
     private boolean situacao;
 
-    public Usuario(String nomeCompleto, String nomeUsuario, LocalDate dataNascimento, String email,
-                   String senha, String[] telefone, boolean situacao) {
-        this.nomeCompleto = nomeCompleto;
+    public Usuario(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
+                   String email, String senha, boolean situacao) {
         this.nomeUsuario = nomeUsuario;
+        this.nomeCompleto = nomeCompleto;
+        this.dataNascimento = dataNascimento;
+        this.email = email;
+        this.senha = senha;
+        this.situacao = situacao;
+    }
+
+    public Usuario(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
+                   String email, String senha, String[] telefone, boolean situacao) {
+        this.nomeUsuario = nomeUsuario;
+        this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
         this.email = email;
         this.senha = senha;
         this.telefone = telefone;
         this.situacao = situacao;
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getNomeCompleto() {
-        return nomeCompleto;
-    }
-
-    public void setNomeCompleto(String nome) {
-        this.nomeCompleto = nome;
     }
 
     public String getNomeUsuario() {
@@ -46,6 +39,14 @@ public class Usuario {
 
     public void setNomeUsuario(String nomeUsuario) {
         this.nomeUsuario = nomeUsuario;
+    }
+
+    public String getNomeCompleto() {
+        return nomeCompleto;
+    }
+
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
     }
 
     public LocalDate getDataNascimento() {
@@ -80,7 +81,7 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public boolean isSituacao() {
+    public boolean getSituacao() {
         return situacao;
     }
 
