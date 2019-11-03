@@ -1,45 +1,45 @@
 ﻿CREATE TABLE Usuario(
-	Codigo SERIAL,
+    NomeUsuario VARCHAR(200),
 	NomeCompleto VARCHAR(200) NOT NULL,
-    NomeUsuario VARCHAR(200) NOT NULL,
 	DataNascimento DATE NOT NULL,
 	Email VARCHAR(100) NOT NULL,
 	Senha VARCHAR(100) NOT NULL,
-	CONSTRAINT PK_Usuario PRIMARY KEY(Codigo)
+    Situacao BOOLEAN NOT NULL,
+	CONSTRAINT PK_Usuario PRIMARY KEY(NomeUsuario)
 );
 
 CREATE TABLE TelefoneUsuario(
-	CodUsuario INTEGER,
+	NomeUsuario VARCHAR(200),
 	Telefone VARCHAR(20),
-	CONSTRAINT PK_TelefoneUsuario PRIMARY KEY(CodUsuario, Telefone),
-	CONSTRAINT FK_TelegoneUsuario FOREIGN KEY(CodUsuario) REFERENCES Usuario(Codigo) 
+	CONSTRAINT PK_TelefoneUsuario PRIMARY KEY(NomeUsuario, Telefone),
+	CONSTRAINT FK_TelegoneUsuario FOREIGN KEY(NomeUsuario) REFERENCES Usuario(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT
-); 
+);
 
 CREATE TABLE Especialista(
-	CodUsuario INTEGER,
+	NomeUsuario VARCHAR(200),
 	Descricao VARCHAR(500) NOT NULL,
-	CONSTRAINT PK_Especialista PRIMARY KEY(CodUsuario),
-	CONSTRAINT FK_Especialista FOREIGN KEY(CodUsuario) REFERENCES Usuario(Codigo)
+	CONSTRAINT PK_Especialista PRIMARY KEY(NomeUsuario),
+	CONSTRAINT FK_Especialista FOREIGN KEY(NomeUsuario) REFERENCES Usuario(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
 
 CREATE TABLE AreaEspecialista(
-	CodEspecialista INTEGER,
+	NomeUsuario VARCHAR(200),
 	Area VARCHAR(50),
-	CONSTRAINT PK_AreaEspecialista PRIMARY KEY(CodEspecialista, Area),
-	CONSTRAINT FK_AreaEspecialista FOREIGN KEY(CodEspecialista) REFERENCES Especialista(CodUsuario) 
+	CONSTRAINT PK_AreaEspecialista PRIMARY KEY(NomeUsuario, Area),
+	CONSTRAINT FK_AreaEspecialista FOREIGN KEY(NomeUsuario) REFERENCES Especialista(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
 
 CREATE TABLE Administrador(
-	CodUsuario INTEGER,
+	NomeUsuario VARCHAR(200),
 	DataInicio DATE NOT NULL,
 	DataFim DATE NOT NULL,
-	CONSTRAINT PK_Administrador PRIMARY KEY(CodUsuario),
-	CONSTRAINT FK_Administrador FOREIGN KEY(CodUsuario) REFERENCES Usuario(Codigo)
+	CONSTRAINT PK_Administrador PRIMARY KEY(NomeUsuario),
+	CONSTRAINT FK_Administrador FOREIGN KEY(NomeUsuario) REFERENCES Usuario(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
@@ -48,9 +48,9 @@ CREATE TABLE Postagem(
 	Area VARCHAR(50) NOT NULL,
 	Descricao VARCHAR(500) NOT NULL,
 	DataPostagem DATE NOT NULL,
-	CodUsuario INTEGER,
+	NomeUsuario VARCHAR(200),
 	CONSTRAINT PK_Postagem PRIMARY KEY(Id),
-	CONSTRAINT FK_Postagem FOREIGN KEY(CodUsuario) REFERENCES Usuario(Codigo)
+	CONSTRAINT FK_Postagem FOREIGN KEY(NomeUsuario) REFERENCES Usuario(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
@@ -68,14 +68,14 @@ CREATE TABLE Comentario(
 CREATE TABLE Estante(
 	Id SERIAL,
 	DataCriacao DATE NOT NULL,
-	CodUsuario INTEGER,
+	NomeUsuario VARCHAR(200),
 	CONSTRAINT PK_Estante PRIMARY KEY(Id),
-	CONSTRAINT FK_Estante FOREIGN KEY(CodUsuario) REFERENCES Usuario(Codigo)
+	CONSTRAINT FK_Estante FOREIGN KEY(NomeUsuario) REFERENCES Usuario(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
 CREATE TABLE Prateleira(
-	Codigo SERIAL, 
+	Codigo SERIAL,
 	IdEstante INTEGER,
 	Descricao VARCHAR(500) NOT NULL,
 	DataCriacao DATE NOT NULL,
@@ -97,20 +97,13 @@ CREATE TABLE Conteudo(
 );
 
 CREATE TABLE AvaliaConteudo(
-	CodUsuario INTEGER,
+	NomeUsuario VARCHAR(200),
 	IdConteudo INTEGER,
 	Nota INTEGER,
-	CONSTRAINT PK_AvaliaConteudo PRIMARY KEY(CodUsuario, IdConteudo),
-	CONSTRAINT FK1_AvaliaConteudo FOREIGN KEY(CodUsuario) REFERENCES Usuario(Codigo)
+	CONSTRAINT PK_AvaliaConteudo PRIMARY KEY(NomeUsuario, IdConteudo),
+	CONSTRAINT FK1_AvaliaConteudo FOREIGN KEY(NomeUsuario) REFERENCES Usuario(NomeUsuario)
 		ON UPDATE CASCADE ON DELETE RESTRICT,
 	CONSTRAINT FK2_AvaliaConteudo FOREIGN KEY(IdConteudo) REFERENCES Conteudo(Id)
 		ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
-
-
-
-
-
-	
-	
