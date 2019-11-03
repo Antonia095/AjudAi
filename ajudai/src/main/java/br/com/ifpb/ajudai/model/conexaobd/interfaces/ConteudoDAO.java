@@ -6,8 +6,8 @@ import br.com.ifpb.ajudai.model.entidades.Especialista;
 import java.sql.SQLException;
 
 public interface ConteudoDAO {
-    boolean adicionarConteudo(Especialista especialista) throws SQLException, ClassNotFoundException;
-    boolean removerConteudo(Especialista especialista);
-    boolean atualizarContedudo(Especialista especialista);
+    boolean adicionarConteudo(Conteudo conteudo) throws SQLException, ClassNotFoundException;
+    boolean removerConteudo(Conteudo conteudo);
+    boolean atualizarContedudo(Conteudo conteudo);
     Conteudo buscarConteudo(int id);
 }

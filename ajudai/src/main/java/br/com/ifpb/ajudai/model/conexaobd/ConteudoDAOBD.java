@@ -16,21 +16,24 @@ public class ConteudoDAOBD implements ConteudoDAO {
     }
 
     @Override
-    public boolean adicionarConteudo(Especialista especialista) throws SQLException, ClassNotFoundException {
+    public boolean adicionarConteudo(Conteudo conteudo) throws SQLException, ClassNotFoundException {
         try(Connection connection = conFactory.getConnetion()) {
             PreparedStatement statement = connection.prepareStatement("INSERT INTO Conteudo(Nome,Local,IdPostagem)" +
                     "VALUES (?,?,?)");
+            statement.setString(1,conteudo.getNome());
+            statement.setString(2,conteudo.getLocal());
+            statement.setInt(3,2);
+            return statement.executeUpdate()>0;
         }
+    }
+
+    @Override
+    public boolean removerConteudo(Conteudo conteudo) {
         return false;
     }
 
     @Override
-    public boolean removerConteudo(Especialista especialista) {
-        return false;
-    }
-
-    @Override
-    public boolean atualizarContedudo(Especialista especialista) {
+    public boolean atualizarContedudo(Conteudo conteudo) {
         return false;
     }
 
