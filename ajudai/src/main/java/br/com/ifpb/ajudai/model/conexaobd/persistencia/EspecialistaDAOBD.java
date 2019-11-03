@@ -1,5 +1,6 @@
-package br.com.ifpb.ajudai.model.conexaobd;
+package br.com.ifpb.ajudai.model.conexaobd.persistencia;
 
+import br.com.ifpb.ajudai.model.conexaobd.ConnectionFactory;
 import br.com.ifpb.ajudai.model.conexaobd.interfaces.EspecialistaDAO;
 import br.com.ifpb.ajudai.model.entidades.Especialista;
 
@@ -30,7 +31,7 @@ public class EspecialistaDAOBD implements EspecialistaDAO {
     @Override
     public boolean removerEspecialista(Especialista especialista) throws SQLException, ClassNotFoundException {
         try(Connection connection = conFactory.getConnetion()){
-            PreparedStatement statement = connection.prepareStatement("DELETE FROM Especilista" +
+            PreparedStatement statement = connection.prepareStatement("DELETE FROM Especilista " +
                     "WHERE NomeUsuario = ?");
             statement.setString(1,especialista.getNomeUsuario());
             return statement.executeUpdate()>0;
@@ -40,7 +41,7 @@ public class EspecialistaDAOBD implements EspecialistaDAO {
     @Override
     public boolean atualizarEspecialista(Especialista especialista) throws SQLException, ClassNotFoundException {
         try(Connection connection = conFactory.getConnetion()){
-            PreparedStatement statement = connection.prepareStatement("UPDATE Especialista" +
+            PreparedStatement statement = connection.prepareStatement("UPDATE Especialista " +
                     "SET Descricao = ?");
             statement.setString(1,especialista.getDescricao());
             return statement.executeUpdate()>0;
@@ -59,7 +60,7 @@ public class EspecialistaDAOBD implements EspecialistaDAO {
                 especialista.setDescricao(resultSet.getString("Descricao"));
                 return especialista;
             }else{
-                return null;
+                return especialista;
             }
         }
     }

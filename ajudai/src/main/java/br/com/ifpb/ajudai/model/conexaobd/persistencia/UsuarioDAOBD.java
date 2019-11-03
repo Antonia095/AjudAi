@@ -1,5 +1,6 @@
-package br.com.ifpb.ajudai.model.conexaobd;
+package br.com.ifpb.ajudai.model.conexaobd.persistencia;
 
+import br.com.ifpb.ajudai.model.conexaobd.ConnectionFactory;
 import br.com.ifpb.ajudai.model.conexaobd.interfaces.UsuarioDAO;
 import br.com.ifpb.ajudai.model.entidades.Usuario;
 
@@ -31,7 +32,7 @@ public class UsuarioDAOBD implements UsuarioDAO {
     @Override
     public boolean removerUsuario(Usuario usuario) throws SQLException, ClassNotFoundException {
         try(Connection connection = conFactory.getConnetion()){
-            PreparedStatement statement = connection.prepareStatement("DELETE FROM Usuario" +
+            PreparedStatement statement = connection.prepareStatement("DELETE FROM Usuario " +
                     "WHERE NomeUsuario = ?");
             statement.setString(1,usuario.getNomeUsuario());
             return statement.executeUpdate()>0;
@@ -42,7 +43,7 @@ public class UsuarioDAOBD implements UsuarioDAO {
     public boolean atualizarUsuario(Usuario usuario) throws SQLException, ClassNotFoundException {
         try(Connection connection = conFactory.getConnetion()){
             PreparedStatement statement = connection.prepareStatement("UPDATE Usuario SET " +
-                    "NomeCompleto = ?, DataNascimento = ?, Email = ?, Senha = ?, Situacao = ?" +
+                    "NomeCompleto = ?, DataNascimento = ?, Email = ?, Senha = ?, Situacao = ? " +
                     "WHERE NomeUsuario = ?");
             statement.setString(1,usuario.getNomeCompleto());
             statement.setDate(2,Date.valueOf(usuario.getDataNascimento()));
@@ -58,7 +59,7 @@ public class UsuarioDAOBD implements UsuarioDAO {
     public Usuario buscarUsuario(String nomeUsuario) throws SQLException, ClassNotFoundException {
         try(Connection connection = conFactory.getConnetion()){
             Usuario usuario = null;
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Ususario" +
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM Usuario " +
                     "WHERE NomeUsuario = ?");
             ResultSet resultSet = statement.executeQuery();
             if(resultSet.next()){
@@ -69,7 +70,7 @@ public class UsuarioDAOBD implements UsuarioDAO {
                         resultSet.getBoolean("Situacao"));
                 return usuario;
             }else{
-                return null;
+                return usuario;
             }
         }
     }
