@@ -9,7 +9,7 @@ public class ConteudoDAOBD implements ConteudoDAO {
 
     @Override
     public boolean adicionarConteudo() {
-
+            return false;
     }
 
     @Override
