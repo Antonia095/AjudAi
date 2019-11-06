@@ -7,10 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fee4fc9b-c563-461a-bc0b-af7665dd3873" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/PrateleiraDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/css/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/js/materialize.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/Prateleira.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,11 +101,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources/BaseDados" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/BaseDados" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -224,6 +232,9 @@
       <workItem from="1572727335543" duration="1189000" />
       <workItem from="1572734330576" duration="6765000" />
       <workItem from="1572800851839" duration="1352000" />
+      <workItem from="1572803676335" duration="7967000" />
+      <workItem from="1572826421078" duration="2809000" />
+      <workItem from="1573063944738" duration="292000" />
     </task>
     <servers />
   </component>
