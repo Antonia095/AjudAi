@@ -6,19 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fee4fc9b-c563-461a-bc0b-af7665dd3873" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/PrateleiraDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/css/materialize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/js/materialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/js/materialize.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/Prateleira.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" afterDir="false" />
-    </list>
+    <list default="true" id="fee4fc9b-c563-461a-bc0b-af7665dd3873" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
