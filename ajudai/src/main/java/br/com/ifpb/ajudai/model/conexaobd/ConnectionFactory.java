@@ -1,5 +1,7 @@
 package br.com.ifpb.ajudai.model.conexaobd;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -13,7 +15,8 @@ public class ConnectionFactory {
     private static String usuario;
 
     static {
-        InputStream input = ConnectionFactory.class.getResourceAsStream("config.properties");
+        InputStream input = ConnectionFactory.class.getClassLoader().getResourceAsStream("Conexao/confi" +
+                "g.properties");
         Properties properties = new Properties();
         try {
             properties.load(input);
@@ -25,14 +28,9 @@ public class ConnectionFactory {
         }
     }
 
-    private Connection connection;
-
     public Connection getConnetion() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
-        return connection = DriverManager.getConnection(url,usuario,senha);
+        return DriverManager.getConnection(url,usuario,senha);
     }
 
-    public void sucesso(){
-
-    }
 }
