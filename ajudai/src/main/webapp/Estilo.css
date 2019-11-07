@@ -1,0 +1,38 @@
+#campoEmail{
+
+    border: 2px solid #F5FFFA;
+    border-radius: 6px;
+    background-color: #F5FFFA;
+    height: 30px;
+    width: 70%;
+    float: right;
+    margin-top: 15px;
+
+}
+#campoSenha{
+
+    border: 2px solid #F5FFFA;
+    border-radius: 6px;
+    background-color: #F5FFFA;
+    height: 30px;
+    width: 70%;
+    float: right;
+    margin-top: 15px;
+
+}
+#botao{
+    border-radius: 6px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+#rodape{
+    background-color: white;
+}
