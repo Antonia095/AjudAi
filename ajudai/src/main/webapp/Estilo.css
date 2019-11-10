@@ -1,4 +1,9 @@
 /*Menu*/
+img{
+    margin-top: -6px;
+    width: 75px;
+    height: 75px;
+}
 #campoEmail{
 
     border: 2px solid #F5FFFA;
@@ -92,6 +97,9 @@ h1{
 #bt{
     border-radius: 6px;
     background-color: #0B614B;
+}
+#texto{
+    color: white;
 }
 /*Rodapé*/
 #rodape{

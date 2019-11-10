@@ -16,7 +16,7 @@
     <header>
         <nav>
             <div class="nav-wrapper blue-grey darken-4">
-                <a href="#" class="brand-logo">AjudAí</a>
+                <a href="#" class="brand-logo"><img src="img/logo.png"></a>
                 <div id="nav-mobile" class="right">
                     <form action="LoginServlet">
                         <ul id="campoLogin">
@@ -77,10 +77,11 @@
                         
                   </div>
                   <button id="bt" class="btn right
-                  " type="submit" name="btProximo">
-                        Próximo
+                  " type="submit" name="btProximo" >
                         <i class="material-icons right">arrow_forward</i>
-                    </button>
+                        <a id="texto" href="SegundaTela.html">Próximo</a>
+                        
+                  </button>
 
                 </form>
           </div>
