@@ -8,18 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb64c1e2-c02f-42e1-b2c9-e2330952673b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/CadastraUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/CadastraUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/EspecialistaDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,26 +35,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.java">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="275">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -90,7 +64,6 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Especialista.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Usuario.java" />
@@ -112,6 +85,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql" />
       </list>
     </option>
   </component>
@@ -132,8 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,29 +153,36 @@
               <item name="ajudai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
               <item name="ajudai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="BaseDados" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/pweb1-master/exemplos/01-introducao/app-web-mvc" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -306,12 +285,13 @@
       <option name="presentableId" value="Default" />
       <updated>1572703716916</updated>
       <workItem from="1572703719915" duration="1657000" />
-      <workItem from="1572741976885" duration="29331000" />
+      <workItem from="1572741976885" duration="29630000" />
+      <workItem from="1572872458883" duration="2541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30988000" />
+    <option name="totallyTimeSpent" value="33828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,9 +304,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1049" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1638207" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18303095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -334,7 +313,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Application Servers" order="1" sideWeight="0.4994664" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
@@ -430,13 +409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -450,13 +423,6 @@
             <element signature="e#865#866#0" expanded="true" />
             <element signature="e#903#904#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2725">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
@@ -495,13 +461,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -554,13 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -678,6 +631,20 @@
             <element signature="e#446#447#0" expanded="true" />
             <element signature="e#497#498#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="91" column="16" lean-forward="true" selection-start-line="90" selection-start-column="22" selection-end-line="91" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
