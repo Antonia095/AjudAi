@@ -8,7 +8,6 @@ import java.util.List;
 
 import br.com.ifpb.ajudai.model.conexaobd.interfaces.DAOComentario;
 import br.com.ifpb.ajudai.model.entidades.Comentario;
-import br.edu.ifpb.pweb1.model.Livro;
 
 
 public class DAOBDComentario implements DAOComentario{
