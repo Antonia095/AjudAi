@@ -89,6 +89,19 @@ h1{
     position: relative;
     left: -50px;
 }
+
+#tipoUsuario{
+    border: 2px solid #BDBDBD;
+    border-radius: 6px;
+    background-color: #F5FFFA;
+    height: 32px;
+    width: 60%;
+    float: right;
+    margin-top: 9px;
+    position: relative;
+    left: -50px;
+}
+
 #tx{
 
    color:#0A0A2A; 

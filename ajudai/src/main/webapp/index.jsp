@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
@@ -16,7 +17,7 @@
     <header>
         <nav>
             <div class="nav-wrapper blue-grey darken-4">
-                <a href="#" class="brand-logo"><img src="img/logo.png"></a>
+                <a href="#" class="brand-logo left"><img src="img/logo.png"></a>
                 <div id="nav-mobile" class="right">
                     <form action="LoginServlet">
                         <ul id="campoLogin">
