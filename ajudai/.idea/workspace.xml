@@ -1,53 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="ajudai:war" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb64c1e2-c02f-42e1-b2c9-e2330952673b" name="Default Changelist" comment="">
+    <list default="true" id="54ed9a89-c1ef-4578-b9c7-9dbeadf95319" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/ProjetoPw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/PrateleiraDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/css/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/materialize/js/materialize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/CadastraUsuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sucesso.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/sucesso.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/BaseDados/scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/Conexao/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/META-INF/ajudai.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/EspecialistaDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Comentario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Conteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Especialista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Estante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Postagem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Prateleira.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/lib/postgresql-42.2.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/imagens/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseDados/scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Conexao/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ajudai.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/EspecialistaDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Comentario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Conteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Especialista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Estante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Postagem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Prateleira.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Usuario.class" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -63,16 +99,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-419">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Jsp File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -80,31 +128,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Especialista.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/sucesso.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Conexao/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/CadastraUsuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/UsuarioDAOBD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/EspecialistaDAOBD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneEspecialistaDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/TelefoneEspecialistaDAOBD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/TelefoneUsuarioDAOBD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
       </list>
     </option>
   </component>
@@ -152,6 +177,66 @@
               <item name="ajudai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="conexaobd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="conexaobd" type="462c0819:PsiDirectoryNode" />
+              <item name="persistencia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="BaseDados" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ajudai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ajudai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -160,28 +245,6 @@
       </pane>
       <pane id="PackagesPane" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/imagens" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/imagens" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,178 +258,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="TomCat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.35" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ajudai/home.jsp" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="ajudai:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/ajudai" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ajudai_5" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="36729" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="ajudai:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_ajudai" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="36729" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="eb64c1e2-c02f-42e1-b2c9-e2330952673b" name="Default Changelist" comment="" />
-      <created>1572703716916</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1572703716916</updated>
-      <workItem from="1572703719915" duration="1657000" />
-      <workItem from="1572741976885" duration="29630000" />
-      <workItem from="1572872458883" duration="2541000" />
-      <workItem from="1573608640477" duration="11002000" />
-      <workItem from="1573642400806" duration="7157000" />
-    </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54504000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1049" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11366062" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1755603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -378,7 +283,7 @@
       <window_info anchor="bottom" id="Application Servers" order="1" sideWeight="0.4994664" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49893278" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49893278" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4994664" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -436,237 +341,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="ConnectionFactory.senha" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="79" column="69" lean-forward="true" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/ConteudoDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Postagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Comentario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sucesso.jsp" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.8/postgresql-42.2.8.jar!/org/postgresql/core/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Softwares/jdk1.8.0_211/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="339" column="29" selection-start-line="339" selection-start-column="29" selection-end-line="339" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Softwares/jdk1.8.0_211/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="414" selection-start-line="414" selection-end-line="414" />
-          <folding>
-            <element signature="e#17377#17378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Softwares/jdk1.8.0_211/src.zip!/java/lang/ExceptionInInitializerError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#3825#3826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Conexao/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Softwares/jdk1.8.0_211/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5850">
-          <caret line="74" column="46" lean-forward="true" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3444d932-654f-4711-8b31-27e7219f81fe/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Conteudo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Especialista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/CadastraUsuario.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="94" column="50" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Estante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -681,76 +356,22 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
