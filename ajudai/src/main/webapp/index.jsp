@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1"  %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +12,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
 
 </head>
 <body>
@@ -39,13 +42,13 @@
         </nav>
 
     </header>
-    <!--ConteÃºdo-->
+    <!--Conteúdo-->
     <main>
         <section id="campoAssunto">
-            <h1>AjudAÃ­</h1>
+            <h1>AjudAí</h1>
             <p id="assunto">
-                Obtenha materiais de estudos na Ã¡rea de TI,<br>
-                sejam estes: vÃ­deos, apostila, artigos, TCCs e etc,<br> em um repositÃ³rio que facilite a pesquisa.
+                Obtenha materiais de estudos na área de TI,<br>
+                sejam estes: vídeos, apostila, artigos, TCCs e etc,<br> em um repositório que facilite a pesquisa.
             </p>
         </section>
         <section id="campoCadastro">
@@ -80,7 +83,7 @@
                   <button id="bt" class="btn right
                   " type="submit" name="btProximo" >
                         <i class="material-icons right">arrow_forward</i>
-                        <a id="texto" href="SegundaTela.html">PrÃ³ximo</a>
+                        <a id="texto" href="SegundaTela.html">Próximo</a>
                         
                   </button>
 
@@ -91,12 +94,12 @@
 
     </main>
 
-    <!--RodapÃ©-->
+    <!--Rodapé-->
     <footer id="rodape">
         <div class="footer-copyright">
             <div class=" text-lighten-4 lest left">
 
-                <p style="color:black">Â© 2019 AjudAÃ­</p>
+                <p style="color:black">© 2019 AjudAí</p>
 
             </div>
         </div>

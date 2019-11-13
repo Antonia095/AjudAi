@@ -65,7 +65,7 @@ public class PrateleiraDAOBD implements PrateleiraDAO {
                 while (result.next()) {
                     Prateleira prateleira1 = new Prateleira();
                     prateleira1.setDescricao(result.getString("descricao"));
-                    prateleira1.setDataCriacao(result.getDate("dataCriacao"));
+                    prateleira1.setDataCriacao(result.getDate("dataCriacao").toLocalDate());
                     prateleira1.setTipo(result.getString("tipo"));
                     prateleiras.add(prateleira1);
 
