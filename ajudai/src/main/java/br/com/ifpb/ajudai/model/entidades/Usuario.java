@@ -9,26 +9,13 @@ public class Usuario {
     private LocalDate dataNascimento;
     private String email;
     private String senha;
-    private String[] telefone;
+    private String telefone;
     private boolean situacao;
 
-    public Usuario(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
-                   String email, String senha, boolean situacao) {
+    public Usuario(String nomeUsuario, String nomeCompleto, String email, String telefone, boolean situacao) {
         this.nomeUsuario = nomeUsuario;
         this.nomeCompleto = nomeCompleto;
-        this.dataNascimento = dataNascimento;
         this.email = email;
-        this.senha = senha;
-        this.situacao = situacao;
-    }
-
-    public Usuario(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
-                   String email, String senha, String[] telefone, boolean situacao) {
-        this.nomeUsuario = nomeUsuario;
-        this.nomeCompleto = nomeCompleto;
-        this.dataNascimento = dataNascimento;
-        this.email = email;
-        this.senha = senha;
         this.telefone = telefone;
         this.situacao = situacao;
     }
@@ -71,14 +58,6 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-
-    public String[] getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String[] telefone) {
-        this.telefone = telefone;
     }
 
     public boolean getSituacao() {

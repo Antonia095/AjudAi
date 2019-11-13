@@ -63,12 +63,7 @@ public class UsuarioDAOBD implements UsuarioDAO {
                     "WHERE NomeUsuario = ?");
             ResultSet resultSet = statement.executeQuery();
             if(resultSet.next()){
-                usuario = new Usuario(resultSet.getString("NomeCompleto"),
-                        resultSet.getString("NomeUsuario"),
-                        resultSet.getDate("DataNascimento").toLocalDate(),
-                        resultSet.getString("Email"),resultSet.getString("Senha"),
-                        resultSet.getBoolean("Situacao"));
-                return usuario;
+                return null;
             }else{
                 return usuario;
             }
