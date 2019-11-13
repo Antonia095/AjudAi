@@ -2,13 +2,11 @@ package br.com.ifpb.ajudai.model.entidades;
 
 import java.time.LocalDate;
 
-public class Administrador extends Usuario {
+public class Administrador {
     private LocalDate dataInicio;
     private LocalDate dataFim;
 
-    public Administrador(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento, String email,
-                         String senha, String[] telefone, boolean situacao, LocalDate dataInicio, LocalDate dataFim) {
-        super(nomeUsuario, nomeCompleto, dataNascimento, email, senha, telefone, situacao);
+    public Administrador(LocalDate dataInicio, LocalDate dataFim) { ;
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
     }
