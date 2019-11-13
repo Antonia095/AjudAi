@@ -29,8 +29,10 @@ public class SalvarUsuario extends HttpServlet {
                 e.printStackTrace();
             }
         }else{
-            Especialista especialista = (Especialista) session.getAttribute("especialisa");
+            Especialista especialista = (Especialista) session.getAttribute("especialista");
             especialista.setDescricao(req.getParameter("descricao"));
+            System.out.println(especialista);
+            req.getRequestDispatcher("usuario.jsp").forward(req,resp);
         }
 
     }

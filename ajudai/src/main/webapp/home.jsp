@@ -36,7 +36,7 @@
                    <input name="nome" type="text" class="form-control" id="inputNome" placeholder="Seu nome completo" required>
                </div>
                <div class="form-group">
-                   <label for="inputNomeUsuario">Data Nascimento</label>
+                   <label for="inputNomeUsuario">Nome usuario</label>
                    <input name="nomeUsuario" type="text" class="form-control" id="inputNomeUsuario" placeholder="Nome usuário" required>
                </div>
                <div class="form-group">
