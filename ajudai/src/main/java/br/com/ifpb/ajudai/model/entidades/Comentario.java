@@ -1,14 +1,17 @@
 package br.com.ifpb.ajudai.model.entidades;
 
-import java.time.LocalDate;
+import java.sql.Date;
 
 public class Comentario {
     private String descricao;
-    private LocalDate dataComentario;
+    private Date dataComentario;
 
-    public Comentario(String descricao, LocalDate dataComentario) {
+    public Comentario(String descricao, Date dataComentario) {
         this.descricao = descricao;
         this.dataComentario = dataComentario;
+    }
+    public Comentario() {
+    	
     }
 
     public String getDescricao() {
@@ -19,11 +22,11 @@ public class Comentario {
         this.descricao = descricao;
     }
 
-    public LocalDate getDataComentario() {
+    public Date getDataComentario() {
         return dataComentario;
     }
 
-    public void setDataComentario(LocalDate dataComentario) {
+    public void setDataComentario(Date dataComentario) {
         this.dataComentario = dataComentario;
     }
 }
