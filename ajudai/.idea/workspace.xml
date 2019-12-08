@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ajudai:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e692fa07-7d45-43f9-b7c4-cefe223ebac4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/connectiondb/interfaces/UsuarioDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/connectiondb/persistence/UsuarioDAOBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3444d932-654f-4711-8b31-27e7219f81fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3444d932-654f-4711-8b31-27e7219f81fe/storage_v2/_src_/database/AjudAi.4Gr3dA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3444d932-654f-4711-8b31-27e7219f81fe/storage_v2/_src_/database/AjudAi.4Gr3dA/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/CadastraUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/SalvarUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/connectiondb/configconnection/Postgre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/PrateleiraDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Administrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Comentario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Conteudo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Especialista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Estante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Postagem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Prateleira.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entidades/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BaseDados/scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Conexao/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/connection/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/formulario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/imagens/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/usuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/BaseDados/scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/Conexao/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/controller/SalvarUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/PrateleiraDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Comentario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Conteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Especialista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Estante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Postagem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Prateleira.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/classes/br/com/ifpb/ajudai/model/entidades/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/lib/postgresql-42.2.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/formulario.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/imagens/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai-1.0-SNAPSHOT/usuario.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseDados/scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Conexao/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/CadastraUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/SalvarUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/ConteudoDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/PrateleiraDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/AdministradorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/EspecialistaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/PrateleiraDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/TelefoneUsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/interfaces/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/AdministradorDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/EspecialistaDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/TelefoneUsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/conexaobd/persistencia/UsuarioDAOBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Comentario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Conteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Especialista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Estante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Postagem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Prateleira.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entidades/Usuario.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectId" id="1UUzpG4MwaiAAogtNdyclprrD1H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/dataBase" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/dataBase" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/imagens" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/paginas" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TomCat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.35" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ajudai/home.jsp" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ajudai:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ajudai" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ajudai_7" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="36239" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ajudai:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e692fa07-7d45-43f9-b7c4-cefe223ebac4" name="Default Changelist" comment="" />
+      <created>1573669557049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573669557049</updated>
+      <workItem from="1573669597922" duration="2048000" />
+      <workItem from="1573749602922" duration="155000" />
+      <workItem from="1574447314642" duration="856000" />
+      <workItem from="1575426151965" duration="14966000" />
+      <workItem from="1575460476173" duration="17303000" />
+      <workItem from="1575518886912" duration="3282000" />
+      <workItem from="1575569526692" duration="259000" />
+      <workItem from="1575637763778" duration="2760000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="220" width="800" height="672" key="#Template_Data_Languages" timestamp="1575432122831">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="555" y="220" width="800" height="672" key="#Template_Data_Languages/0.40.1920.1040@0.40.1920.1040" timestamp="1575432122831" />
+    <state x="555" y="220" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575511156032">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="555" y="220" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1575511156032" />
+    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1575458303508">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1575458303508" />
+    <state x="808" y="451" width="293" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575426226259">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="808" y="451" width="293" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1575426226259" />
+    <state x="693" y="309" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575457613761">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="693" y="309" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1575457613761" />
+    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl" timestamp="1575522546376">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1575522546376" />
+    <state width="1294" height="276" key="GridCell.Tab.0.bottom" timestamp="1575641164635">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164635" />
+    <state width="1294" height="276" key="GridCell.Tab.0.center" timestamp="1575641164634">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164634" />
+    <state width="1294" height="276" key="GridCell.Tab.0.left" timestamp="1575641164633">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164633" />
+    <state width="1294" height="276" key="GridCell.Tab.0.right" timestamp="1575641164634">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164634" />
+    <state width="1294" height="276" key="GridCell.Tab.1.bottom" timestamp="1575641164637">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164637" />
+    <state width="1294" height="276" key="GridCell.Tab.1.center" timestamp="1575641164635">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164635" />
+    <state width="1294" height="276" key="GridCell.Tab.1.left" timestamp="1575641164635">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164635" />
+    <state width="1294" height="276" key="GridCell.Tab.1.right" timestamp="1575641164636">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164636" />
+    <state width="1294" height="276" key="GridCell.Tab.2.bottom" timestamp="1575641164638">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164638" />
+    <state width="1294" height="276" key="GridCell.Tab.2.center" timestamp="1575641164638">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164638" />
+    <state width="1294" height="276" key="GridCell.Tab.2.left" timestamp="1575641164637">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164637" />
+    <state width="1294" height="276" key="GridCell.Tab.2.right" timestamp="1575641164638">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1575641164638" />
+    <state width="1294" height="276" key="GridCell.Tab.3.bottom" timestamp="1575471712151">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1575471712151" />
+    <state width="1294" height="276" key="GridCell.Tab.3.center" timestamp="1575471712150">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1575471712150" />
+    <state width="1294" height="276" key="GridCell.Tab.3.left" timestamp="1575471712150">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1575471712150" />
+    <state width="1294" height="276" key="GridCell.Tab.3.right" timestamp="1575471712150">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1294" height="276" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1575471712150" />
+    <state x="493" y="217" width="924" height="679" key="Maven.ArtifactSearchDialog" timestamp="1575638520784">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="493" y="217" width="924" height="679" key="Maven.ArtifactSearchDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1575638520784" />
+    <state x="817" y="432" width="327" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1575517102154">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="817" y="432" width="327" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.40.1920.1040@0.40.1920.1040" timestamp="1575517102154" />
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1575637766315">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1575637766315" />
+  </component>
+</project>
