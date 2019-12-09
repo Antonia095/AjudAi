@@ -18,7 +18,7 @@
                 <form action="BuscarConteudo">
                     <ul id="campoBuscar">
                         <li>
-                            <input id="campoEmail" type="text" class="validate" placeholder="Buscar conteúdo">
+                            <input id="campoBusca" type="text" class="validate" placeholder="Buscar conteúdo">
                         </li>
 
                         <li>
