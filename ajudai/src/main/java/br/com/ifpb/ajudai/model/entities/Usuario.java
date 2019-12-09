@@ -10,6 +10,8 @@ public class Usuario {
     private String email;
     private String senha;
     private LocalDate dataNascimento;
+    private Estante estante;
+
 
     public Usuario() {
     }
@@ -71,6 +73,10 @@ public class Usuario {
 
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public Estante getEstante() {
+        return estante;
     }
 
     @Override

@@ -24,7 +24,6 @@
         </div>
     </nav>
 <!--barra superior-->
-
         <div class="row">
             <div class="col">
             </div>
