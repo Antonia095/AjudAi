@@ -5,6 +5,7 @@
 <html>
     <head>
         <title>AjudAí - entre ou cadastre-se</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
@@ -12,15 +13,18 @@
     <nav class="navbar bg-dark text-white">
         <label class="navbar-brand">
             <img src="images/logo.png" width="35px" height="42px" class="d-inline-block align-top" title="AjudAí">
-            <label style="font-family: 'Liberation Serif'; font-size: 23px">AjudAí</label>
         </label>
         <div class="form-inline my-2 my-lg-0">
-            <input id="usuardio" class="form-control mr-sm-2" type="text" placeholder="Usuário ou e-mail">
-            <input id="senha" class="form-control mr-sm-2" type="password" placeholder="Senha">
-            <button class="btn btn-primary my-2 my-sm-0" id="btEntrar">Entrar</button>
+            <form>
+                <input id="usuardio" class="form-control mr-sm-2" type="text" placeholder="Usuário ou e-mail" autocomplete="off" required>
+                <input id="senha" class="form-control mr-sm-2" type="password" placeholder="Senha" autocomplete="off" required>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Entrar</button>
+            </form>
+
         </div>
     </nav>
 <!--barra superior-->
+
         <div class="row">
             <div class="col">
             </div>
@@ -36,7 +40,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col float-right">
+            <div id="panel-cadastro" class="col float-right">
                 <div style="background-color: honeydew;width: 500px; height: 477px; border-radius: 20px 20px; margin: 45px; padding: 8px">
                     <div>
                         <h2 style="font-family: 'Liberation Serif'; margin-left: 145px"><b>Abra sua conta</b></h2>

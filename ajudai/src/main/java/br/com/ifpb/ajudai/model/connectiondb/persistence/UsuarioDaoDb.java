@@ -1,15 +1,15 @@
 package br.com.ifpb.ajudai.model.connectiondb.persistence;
 
 import br.com.ifpb.ajudai.model.connectiondb.configconnection.Postgre;
-import br.com.ifpb.ajudai.model.connectiondb.interfaces.UsuarioDAO;
+import br.com.ifpb.ajudai.model.connectiondb.interfaces.UsuarioDao;
 import br.com.ifpb.ajudai.model.entities.Usuario;
 
 import java.sql.*;
 
-public class UsuarioDAOBD implements UsuarioDAO {
+public class UsuarioDaoDb implements UsuarioDao {
     private Postgre postgre;
 
-    public UsuarioDAOBD(){
+    public UsuarioDaoDb(){
         postgre = new Postgre();
     }
 

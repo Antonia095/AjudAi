@@ -1,6 +1,6 @@
 package br.com.ifpb.ajudai.controller;
 
-import br.com.ifpb.ajudai.model.connectiondb.persistence.UsuarioDAOBD;
+import br.com.ifpb.ajudai.model.connectiondb.persistence.UsuarioDaoDb;
 import br.com.ifpb.ajudai.model.entities.Usuario;
 
 import javax.servlet.ServletException;
@@ -17,7 +17,7 @@ public class LoginUsuarioController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String usuario_email = req.getParameter("usuario");
         String senha = req.getParameter("senha");
-        UsuarioDAOBD userdb = new UsuarioDAOBD();
+        UsuarioDaoDb userdb = new UsuarioDaoDb();
         Usuario usuario = null;
         try {
             usuario = userdb.searchUsuario(usuario_email);

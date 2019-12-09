@@ -1,5 +1,7 @@
 package br.com.ifpb.ajudai.model.connectiondb.configconnection;
 
+import redis.clients.jedis.Jedis;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -20,7 +22,7 @@ public class Redis {
         }
     }
 
-    /*public Jedis getConnetion(){
+    public Jedis getJedis(){
         return new Jedis(host,porta);
-    }*/
+    }
 }
