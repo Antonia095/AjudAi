@@ -16,6 +16,13 @@ public class Usuario {
     public Usuario() {
     }
 
+    public Usuario(String nomeCompleto, String nomeUsuario, String telefone, LocalDate dataNascimento) {
+        this.nomeCompleto = nomeCompleto;
+        this.nomeUsuario = nomeUsuario;
+        this.telefone = telefone;
+        this.dataNascimento = dataNascimento;
+    }
+
     public Usuario(String nomeCompleto, String nomeUsuario, String telefone,
                    String email, String senha, LocalDate dataNascimento) {
         this.nomeCompleto = nomeCompleto;

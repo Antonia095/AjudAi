@@ -18,14 +18,13 @@ public class UsuarioDaoDb implements UsuarioDao {
     public boolean addUsuario(Usuario usuario) throws SQLException, ClassNotFoundException {
         try(Connection connection = postgre.getConnetion()){
             PreparedStatement statement = connection.prepareStatement("INSERT INTO USUARIO(nomeusuario," +
-                    "nomecompleto,datanascimento,email,telefone,senha,ativo) VALUES(?,?,?,?,?,?,?)");
+                    "nomecompleto,datanascimento,email,telefone,senha) VALUES(?,?,?,?,?,?)");
             statement.setString(1,usuario.getNomeUsuario());
             statement.setString(2,usuario.getNomeCompleto());
             statement.setDate(3,Date.valueOf(usuario.getDataNascimento()));
             statement.setString(4,usuario.getEmail());
             statement.setString(5,usuario.getTelefone());
             statement.setString(6,String.valueOf(usuario.hashCode()));
-            statement.setBoolean(7,true);
             return statement.executeUpdate()>0;
         }
     }
@@ -37,7 +36,16 @@ public class UsuarioDaoDb implements UsuarioDao {
 
     @Override
     public boolean updateUsuario(Usuario usuario) throws SQLException, ClassNotFoundException {
-        return false;
+        try(Connection connection = postgre.getConnetion()){
+            PreparedStatement statement = connection.prepareStatement("UPDATE USUARIO SET telefone = ?, senha = ?," +
+                    "datanascimento = ? WHERE nomeusuario = ?");
+            statement.setString(1,usuario.getTelefone());
+            statement.setString(2,String.valueOf(usuario.hashCode()));
+            statement.setDate(3,Date.valueOf(usuario.getDataNascimento()));
+            statement.setString(4,usuario.getNomeUsuario());
+
+            return statement.executeUpdate()>0;
+        }
     }
 
     @Override

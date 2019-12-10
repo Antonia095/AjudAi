@@ -1,26 +1,23 @@
 $('#telefone').mask('(00) 00000-0000');
 
-function direcao(msg){
-    switch (msg) {
-        default: window.location.href='pages/formulario.jsp';
-
-    }
-}
-
-$('#btEntrar').click(function () {
-    var usuario_email = $('#usuardio').val();
-    var senha = $('#senha').val();
+$('#btProsseguir').click(function () {
+    var nomeCompleto = $('#inputNomeCompleto').val();
+    var nomeUsuario = $('#inputNomeUsuario').val();
     $.ajax({
         method: "POST",
-        url: "login",
-        data:{usuario: usuario_email , senha: senha }
+        url: "cadastrar",
+        data:{ }
     })
     .done(function (msg) {
-        direcao(msg);
+        if(msg.length>0){
+            $('#situacaoUsuario').html("Usuário com mesmo nome já existe");
+        }else{
+            segEtapaCadastro();
+        }
     })
 })
 
-$('#btProsseguir').click(function () {
+function segEtapaCadastro() {
     var tela = "<div style=\"background-color: #CED8F6;width: 500px; height: 477px; border-radius: 20px 20px; margin: 45px; padding: 8px\">\n" +
         "                    <div>\n" +
         "                        <h2 style=\"font-family: 'Liberation Serif'; margin-left: 100px\"><b>Continuar cadastro</b></h2>\n" +
@@ -52,5 +49,5 @@ $('#btProsseguir').click(function () {
         "                </div>";
 
     $('#panel-cadastro').html(tela);
-})
+}
 

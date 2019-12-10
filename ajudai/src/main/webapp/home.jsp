@@ -50,20 +50,20 @@
                                 <br/>
                                 <div class="form-group">
                                     <label for="inputNomeCompleto">Nome completo</label>
-                                    <input name="nomeCompleto" type="text" class="form-control" id="inputNomeCompleto" placeholder="Nome completo" autocomplete="off" required>
+                                    <input type="text" class="form-control" id="inputNomeCompleto" placeholder="Nome completo" autocomplete="off" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputNomeUsuario">Nome de usuário</label>
-                                    <input name="nomeUsuario" type="text" class="form-control" id="inputNomeUsuario" placeholder="Nome de usuário" autocomplete="off" required>
+                                    <input type="text" class="form-control" id="inputNomeUsuario" placeholder="Nome de usuário" autocomplete="off" required>
                                     <label id="situacaoUsuario"></label>
                                 </div>
                                 <div class="form-group">
-                                    <label for="telefone">Telefone</label>
-                                    <input name="telefone" type="tel" class="form-control" id="telefone" placeholder="Telefone" autocomplete="off" required>
+                                    <label for="inputelefone">Telefone</label>
+                                    <input type="tel" class="form-control" id="inputelefone" placeholder="Telefone" autocomplete="off" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="dataNascimento">Data de nascimento</label>
-                                    <input name="dataNascimento" type="date" class="form-control" id="dataNascimento" autocomplete="off" required>
+                                    <label for="inputdataNascimento">Data de nascimento</label>
+                                    <input type="date" class="form-control" id="inputdataNascimento" autocomplete="off" required>
                                 </div>
                                 <div style="margin: 20px" class="form-group">
                                     <button style="float: right" class="btn btn-primary" id="btProsseguir" title="Prosseguir">
