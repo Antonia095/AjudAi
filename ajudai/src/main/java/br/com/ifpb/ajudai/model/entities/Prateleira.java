@@ -2,7 +2,9 @@ package br.com.ifpb.ajudai.model.entities;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 
 
 public class Prateleira {
@@ -10,9 +12,11 @@ public class Prateleira {
     private String descricao;
     private LocalDate dataCriacao;
     private String tipo;
-    private List<Prateleira> prateleiras;
+    private HashSet<Conteudo> conteudos;
 
-    public Prateleira(){this.prateleiras = new ArrayList<>();
+
+    public Prateleira(){
+        this.conteudos = new HashSet<>();
     }
 
     public Prateleira(int codigo, String descricao, LocalDate dataCriacao, String tipo) {
@@ -20,7 +24,7 @@ public class Prateleira {
         this.descricao = descricao;
         this.dataCriacao = dataCriacao;
         this.tipo = tipo;
-        this.prateleiras = new ArrayList<Prateleira>();
+        this.conteudos = new HashSet<>();
     }
 
     public int getCodigo() {
@@ -54,11 +58,5 @@ public class Prateleira {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
-    public boolean addPrateleira(Prateleira prateleira){return prateleiras.add(prateleira);}
-
-    public boolean removePrateleira(Prateleira prateleira){return prateleiras.remove(prateleira);}
-
-
 
 }
