@@ -21,7 +21,7 @@ $('#btEntrar').click(function () {
 })
 
 $('#btProsseguir').click(function () {
-    var tela = "<div style=\"background-color: honeydew;width: 500px; height: 477px; border-radius: 20px 20px; margin: 45px; padding: 8px\">\n" +
+    var tela = "<div style=\"background-color: #CED8F6;width: 500px; height: 477px; border-radius: 20px 20px; margin: 45px; padding: 8px\">\n" +
         "                    <div>\n" +
         "                        <h2 style=\"font-family: 'Liberation Serif'; margin-left: 100px\"><b>Continuar cadastro</b></h2>\n" +
         "                        <br/>\n" +
