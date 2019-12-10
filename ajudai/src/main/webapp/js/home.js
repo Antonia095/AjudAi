@@ -1,21 +1,4 @@
-$('#telefone').mask('(00) 00000-0000');
-
-$('#btProsseguir').click(function () {
-    var nomeCompleto = $('#inputNomeCompleto').val();
-    var nomeUsuario = $('#inputNomeUsuario').val();
-    $.ajax({
-        method: "POST",
-        url: "cadastrar",
-        data:{ }
-    })
-    .done(function (msg) {
-        if(msg.length>0){
-            $('#situacaoUsuario').html("Usuário com mesmo nome já existe");
-        }else{
-            segEtapaCadastro();
-        }
-    })
-})
+$('#inputelefone').mask('(00) 00000-0000');
 
 function segEtapaCadastro() {
     var tela = "<div style=\"background-color: #CED8F6;width: 500px; height: 477px; border-radius: 20px 20px; margin: 45px; padding: 8px\">\n" +
@@ -50,4 +33,25 @@ function segEtapaCadastro() {
 
     $('#panel-cadastro').html(tela);
 }
+
+$('#btProsseguir').click(function () {
+    var nomeCompleto = $('#inputNomeCompleto').val();
+    var nomeUsuario = $('#inputNomeUsuario').val();
+    var telefone = $('#inputelefone').val();
+    var dataNascimento = $('#inputdataNascimento').val();
+    $.ajax({
+        method: "POST",
+        url: "cadastrar",
+        data:{nomeCompleto: nomeCompleto, nomeUsuario: nomeUsuario, dataNascimento: dataNascimento, telefone: telefone }
+    })
+    .done(function (msg){
+        console.log(msg);
+        if(msg.length>0){
+            $('#situacaoUsuario').html("Usuário com mesmo nome já existe");
+        }else{
+            segEtapaCadastro();
+        }
+    })
+})
+
 

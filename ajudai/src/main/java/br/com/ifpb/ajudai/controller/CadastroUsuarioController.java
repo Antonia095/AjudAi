@@ -20,7 +20,8 @@ public class CadastroUsuarioController extends HttpServlet {
             if(ValidadorCadastro.validadorNomeUsuario(req.getParameter("nomeUsuario"))){
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
                 Usuario usuario = new Usuario(req.getParameter("nomeCompleto"),req.getParameter("nomeUsuario"),
-                        req.getParameter("telefone"), LocalDate.parse(req.getParameter("data"),formatter));
+                        req.getParameter("telefone"), LocalDate.parse(req.getParameter("dataNascimento"),formatter));
+                resp.getWriter().println("Oi");
             }else{
                 resp.getWriter().println("existe");
             }
