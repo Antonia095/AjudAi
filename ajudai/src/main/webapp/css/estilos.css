@@ -1,5 +1,18 @@
-img{
+#logo{
     margin-top: -6px;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
+}
+#conteudo{
+    background-color: #F8F8FF;
+}
+h1{
+    text-align: center;
+}
+
+#assunto{
+
+    text-align: center;
+    font-size: 20px;
+    color: #0B614B;
 }

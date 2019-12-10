@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"  %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Usuario</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -13,7 +14,9 @@
 <header>
     <nav>
         <div class="nav-wrapper blue-grey darken-4">
-            <a href="#" class="brand-logo left"><img src="images/logo.png"></a>
+            <a href="#" class="brand-logo left">
+                <img id="logo" src="images/logo.png">
+            </a>
             <div id="nav-mobile" class="right">
                 <form action="BuscarConteudo">
                     <ul id="campoBuscar">
