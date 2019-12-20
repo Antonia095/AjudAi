@@ -1,0 +1,62 @@
+.imagem-logo{
+    width: 50px;
+    height: 60px;
+    position: relative;
+    top: 5px;
+}
+
+nav{
+    background-color: #16a085 ;
+
+}
+
+.icone-imagem{
+    width: 70px;
+    height: 220px;
+    position: relative;
+    top: -11px;
+}
+
+.icones-nav{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+}
+
+.bt-sair{
+    color: #ff0000 !important;
+}
+
+#search{
+    color: #ffffff;
+    position: relative;
+    left: -640px;
+}
+
+.icon-search{
+    position: relative;
+    left: -655px;
+    top: 8px;
+}
+
+.estante{
+    height: 100%;
+    border-right-width: 7px;
+    border-right-style: double;
+    border-right-color: #000000;
+}
+
+.img-add{
+    width: 20px;
+    height: 15px;
+}
+
+
+.bt-prateleira{
+    background-color: #ffffff;
+    box-shadow: none !important;
+    color: #0000FF;
+    font-size: 16px;
+    box-shadow: #ffffff;
+}

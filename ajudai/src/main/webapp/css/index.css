@@ -1,0 +1,105 @@
+.painel-esquerda{
+    background-color: #16a085 !important;
+    height: 850px;
+}
+
+.letra-painel{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Liberation Serif';
+}
+
+.img-icones{
+    height: 35px;
+    width: 35px;
+}
+
+.posicao-texto{
+    position: relative;
+    top: -380px !important;
+}
+
+.botao-inscrever{
+    border-radius: 20px 20px;
+    background-color: #20B2AA;
+    width: 350px !important;
+    height: 40px !important;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-entrar{
+    border-radius: 20px 20px;
+    background-color:#ffffff;
+    width: 350px !important;
+    height: 40px !important;
+    color: #008080 ;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bt1:hover{
+    background-color: #008b8b;
+}
+
+.bt2:hover{
+    background-color:#F5F5F5;
+}
+
+.text-logo{
+    position: relative;
+    top: 125px !important;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Ubuntu Condensed';
+
+}
+
+.imagem-logo{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 140px !important;
+}
+
+.painel-direito{
+    background-color: #ffffff;
+}
+
+.botaos{
+    position: relative;
+    top: 120px;
+}
+
+.text-upbt{
+    position: relative;
+    left: -90px !important;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Ubuntu Condensed';
+}
+
+.modal{
+    height: 410px !important;
+    width: 450px !important;
+}
+
+.img-logo{
+    width: 95px;
+    height: 90px;
+}
+
+#btLogin{
+    position: relative;
+    left: -15px !important;
+    border-radius: 20px 20px;
+}
+
+#situacao{
+    color: #8b0000;
+    font-family: 'Liberation Serif';
+    font-size: 15px;
+}

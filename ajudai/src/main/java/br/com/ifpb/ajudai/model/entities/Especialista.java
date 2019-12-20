@@ -1,0 +1,41 @@
+package br.com.ifpb.ajudai.model.entities;
+
+import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Especialista  extends Usuario {
+    private String descricao;
+    private List<Especialidade> especialidades;
+
+    public Especialista() {
+    }
+
+    public Especialista(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
+                        String telefone) {
+        super(nomeUsuario, nomeCompleto, dataNascimento, telefone);
+    }
+
+    public Especialista(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
+                        String email, String imagem, String telefone, String senha, String descricao) {
+        super(nomeUsuario, nomeCompleto, dataNascimento, email, imagem, telefone, senha);
+        this.descricao = descricao;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public boolean addEntities(Object object) {
+        return especialidades.add((Especialidade)object);
+    }
+
+    public boolean removeEntities(Object object) {
+        return especialidades.remove((Especialidade)object);
+    }
+}
