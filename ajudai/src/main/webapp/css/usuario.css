@@ -11,10 +11,9 @@ nav{
 }
 
 .icone-imagem{
-    width: 70px;
-    height: 220px;
+    width: 55px;
+    height: 65px;
     position: relative;
-    top: -11px;
 }
 
 .icones-nav{
@@ -59,4 +58,49 @@ nav{
     color: #0000FF;
     font-size: 16px;
     box-shadow: #ffffff;
+}
+
+#modalPrateleira{
+    height: 375px !important;
+    width: 490px !important;
+}
+
+#btCriar{
+    border-radius: 20px 20px;
+}
+
+.tam-modal{
+    height: 340px !important;
+    width: 490px !important;
+}
+
+#modalMaterial{
+    height: 400px !important;
+    width: 700px !important;
+}
+
+.image-image{
+    position: relative;
+    right: 590px !important;
+}
+
+.input-file{
+    width: 650px !important;
+    position: relative;
+    left: 35px;
+}
+
+.btn-conta{
+    border-radius: 20px 20px;
+}
+
+.btn-edit{
+    font-size: 17px;
+    color: #008b8b;
+    font-family: 'Ubuntu Condensed';
+}
+
+.icon-user{
+    width: 75px;
+    height: 85px;
 }

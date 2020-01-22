@@ -7,6 +7,7 @@ import br.com.ifpb.ajudai.model.persistence.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class EspecialistaDao implements EntitiesDao {
@@ -39,11 +40,29 @@ public class EspecialistaDao implements EntitiesDao {
 
     @Override
     public boolean updateEntities(Object object) throws SQLException, ClassNotFoundException {
-        return false;
+        try(Connection connection = conFactory.getConnection()){
+            Especialista especialista = (Especialista) object;
+            PreparedStatement statement = connection.prepareStatement("UPDATE ESPECIALISTA SET descricao = ? WHERE nomeusuario" +
+                    " = ?");
+            statement.setString(1, especialista.getDescricao());
+            statement.setString(2, especialista.getNomeUser());
+            return statement.executeUpdate()>0;
+        }
     }
 
     @Override
     public Object searchEntities(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        try(Connection connection = conFactory.getConnection()){
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM ESPECIALISTA WHERE nomeusuario = ?");
+            statement.setString(1,id);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            String descricao = resultSet.getString("descricao");
+            if(descricao.length()>2){
+                return descricao;
+            }else{
+                return null;
+            }
+        }
     }
 }

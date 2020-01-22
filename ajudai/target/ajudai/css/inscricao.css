@@ -1,0 +1,47 @@
+nav{
+    background-color: #16a085;
+}
+
+.img-logo{
+    width: 60px;
+    height: 90px;
+}
+
+.formulario{
+    width: 830px;
+    height: 670px;
+    background-color: #FFFFF0;
+    border-radius: 17px 17px;
+}
+
+
+.bt-avancar{
+    border-radius: 20px 20px;
+}
+
+.icone-usuarios{
+    position: relative;
+    right:525px;
+}
+
+.input-file{
+    width: 650px !important;
+    position: relative;
+    left: 35px;
+}
+
+.image-image{
+    position: relative;
+    right: 510px !important;
+}
+
+.resposta{
+    color: #8b0000;
+    font-family: 'Liberation Serif';
+    font-size: 15px;
+}
+
+.mensagem{
+    font-family: 'Ubuntu Condensed';
+    font-size: 21px;
+}

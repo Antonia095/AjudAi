@@ -1,7 +1,5 @@
 package br.com.ifpb.ajudai.model.entities;
 
-import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,5 +51,13 @@ public class Estante {
 
     public boolean removeEntities(Object object) {
         return prateleiras.remove((Prateleira)object);
+    }
+
+    public void setPrateleiras(List<Prateleira> prateleiras) {
+        this.prateleiras = prateleiras;
+    }
+
+    public List<Prateleira> getPrateleiras() {
+        return prateleiras;
     }
 }

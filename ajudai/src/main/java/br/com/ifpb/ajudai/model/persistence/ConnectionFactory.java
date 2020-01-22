@@ -1,6 +1,5 @@
 package br.com.ifpb.ajudai.model.persistence;
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;

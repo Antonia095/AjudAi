@@ -5,6 +5,7 @@ import br.com.ifpb.ajudai.model.entities.Usuario;
 import br.com.ifpb.ajudai.model.persistence.dao.UsuarioDao;
 
 import java.sql.SQLException;
+import java.util.UUID;
 
 public class LoginCadastroUtilities {
     public static Usuario buscaUsuario(String id){
@@ -27,7 +28,12 @@ public class LoginCadastroUtilities {
         }else if(!usuario.getSenha().equals(String.valueOf(user.hashCode()))){
             return "Senha incorreta";
         }else{
-            return "sucesso";
+            if(temAcesso(id)){
+                return "sucesso";
+            }else{
+                return "Conta inexistente";
+            }
+
         }
     }
 
@@ -41,8 +47,24 @@ public class LoginCadastroUtilities {
         }
     }
 
-    public static Especialista realizaMudanca(Usuario usuario,String descricao) {
+    public static Especialista realizaMudanca(Usuario usuario, String descricao) {
         return new Especialista(usuario.getNomeUsuario(),usuario.getNomeCompleto(),usuario.getDataNascimento(),usuario.getEmail(),
-                usuario.getImagem(),usuario.getTelefone(),usuario.getSenha(),descricao);
+                usuario.getImagem(),usuario.getTelefone(),usuario.getSenha(), descricao);
+    }
+
+    public static String geraCodigoAcesso(){
+        String codigo = UUID.randomUUID().toString();
+        System.out.println(codigo);
+        int pos = codigo.indexOf("-");
+        return codigo.substring(0,pos);
+    }
+
+    private static boolean temAcesso(String id) {
+        try{
+            return new UsuarioDao().acesso(id);
+        }catch (SQLException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        return false;
     }
 }

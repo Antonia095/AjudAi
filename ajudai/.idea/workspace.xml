@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51cf38fa-a621-458e-bbf0-6bea07aa1099" name="Default Changelist" comment="" />
+    <list default="true" id="103565c1-9d32-46b0-ad58-25ce38f8826f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +28,32 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="AjudAi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="AjudAi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -35,8 +61,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -55,18 +82,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1UnqZLcWdiUHQ5GPFMeev0fQgqS" />
+  <component name="ProjectId" id="1Waqrv3TxXNeBXH2TxjlAnrjQW0" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/database" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -74,24 +103,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="br.com.ifpb.ajudai.model.entities" />
-      <recent name="br.com.ifpb.ajudai.model" />
+      <recent name="br.com.ifpb.ajudai.controller" />
+      <recent name="br.com.ifpb.ajudai.model.persistence.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/database" />
       <recent name="$PROJECT_DIR$/src/main/webapp/images" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/javascript" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/pages/usuario/image" />
+      <recent name="$PROJECT_DIR$/src/main/resources/database" />
+      <recent name="$PROJECT_DIR$/src/main/resources/configuration" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/resources/arquivos" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 8.5.402" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.402" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.402" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ajudai:war">
@@ -101,7 +125,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ajudai_4" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ajudai_9" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -109,7 +133,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="39859" />
+        <option name="DEBUG_PORT" value="44533" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -168,7 +192,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.13304488" />
+          <option name="contentProportion" value="0.13196322" />
           <treeState>
             <expand>
               <path>
@@ -192,23 +216,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="51cf38fa-a621-458e-bbf0-6bea07aa1099" name="Default Changelist" comment="" />
-      <created>1576002760395</created>
+      <changelist id="103565c1-9d32-46b0-ad58-25ce38f8826f" name="Default Changelist" comment="" />
+      <created>1579398256401</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576002760395</updated>
-      <workItem from="1576002765678" duration="1756000" />
-      <workItem from="1576236502805" duration="1895000" />
-      <workItem from="1576240501124" duration="3980000" />
-      <workItem from="1576256394195" duration="816000" />
-      <workItem from="1576604824689" duration="2814000" />
-      <workItem from="1576607704587" duration="637000" />
-      <workItem from="1576685379951" duration="1841000" />
-      <workItem from="1576687559312" duration="496000" />
-      <workItem from="1576708703168" duration="11391000" />
-      <workItem from="1576724024024" duration="1771000" />
-      <workItem from="1576777313080" duration="8734000" />
-      <workItem from="1576794730242" duration="38300000" />
+      <updated>1579398256401</updated>
+      <workItem from="1579398264914" duration="386000" />
+      <workItem from="1579398734177" duration="795000" />
+      <workItem from="1579399710598" duration="3201000" />
+      <workItem from="1579539141368" duration="3552000" />
+      <workItem from="1579543338597" duration="12661000" />
+      <workItem from="1579569587608" duration="5433000" />
+      <workItem from="1579575113265" duration="8025000" />
+      <workItem from="1579583283760" duration="1801000" />
+      <workItem from="1579585147382" duration="1323000" />
+      <workItem from="1579602403326" duration="2478000" />
+      <workItem from="1579604946666" duration="11191000" />
+      <workItem from="1579625213854" duration="2564000" />
+      <workItem from="1579630096677" duration="6467000" />
+      <workItem from="1579645292259" duration="3623000" />
+      <workItem from="1579648991284" duration="1122000" />
+      <workItem from="1579650225296" duration="14494000" />
+      <workItem from="1579688104163" duration="19500000" />
+      <workItem from="1579711237371" duration="329000" />
     </task>
     <servers />
   </component>
@@ -216,121 +246,247 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="220" width="800" height="672" key="#Inspections" timestamp="1576842241108">
+    <state x="418" y="217" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579636503775">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="555" y="220" width="800" height="672" key="#Inspections/0.40.1920.1040@0.40.1920.1040" timestamp="1576842241108" />
-    <state x="555" y="220" width="800" height="672" key="#Notifications" timestamp="1576002895824">
+    <state x="418" y="217" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1579636503775" />
+    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1579668623372">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="555" y="220" width="800" height="672" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1576002895824" />
-    <state x="418" y="217" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576712235859">
+    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1579668623372" />
+    <state x="555" y="220" width="800" height="672" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1579399340403">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="418" y="217" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1576712235859" />
-    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1576820296110">
+    <state x="555" y="220" width="800" height="672" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.40.1920.1040@0.40.1920.1040" timestamp="1579399340403" />
+    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl" timestamp="1579575546026">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1576820296110" />
-    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl" timestamp="1576814732632">
+    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1579575546026" />
+    <state width="1604" height="276" key="GridCell.Tab.0.bottom" timestamp="1579711566023">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1576814732632" />
-    <state width="1602" height="226" key="GridCell.Tab.0.bottom" timestamp="1576849140948">
+    <state width="1604" height="276" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566023" />
+    <state width="1604" height="276" key="GridCell.Tab.0.center" timestamp="1579711566021">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140948" />
-    <state width="1602" height="226" key="GridCell.Tab.0.center" timestamp="1576849140948">
+    <state width="1604" height="276" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566021" />
+    <state width="1604" height="276" key="GridCell.Tab.0.left" timestamp="1579711566020">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140948" />
-    <state width="1602" height="226" key="GridCell.Tab.0.left" timestamp="1576849140947">
+    <state width="1604" height="276" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566020" />
+    <state width="1604" height="276" key="GridCell.Tab.0.right" timestamp="1579711566022">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140947" />
-    <state width="1602" height="226" key="GridCell.Tab.0.right" timestamp="1576849140948">
+    <state width="1604" height="276" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566022" />
+    <state width="1604" height="276" key="GridCell.Tab.1.bottom" timestamp="1579711566025">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140948" />
-    <state width="1602" height="226" key="GridCell.Tab.1.bottom" timestamp="1576849140722">
+    <state width="1604" height="276" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566025" />
+    <state width="1604" height="276" key="GridCell.Tab.1.center" timestamp="1579711566024">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140722" />
-    <state width="1602" height="226" key="GridCell.Tab.1.center" timestamp="1576849140721">
+    <state width="1604" height="276" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566024" />
+    <state width="1604" height="276" key="GridCell.Tab.1.left" timestamp="1579711566024">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140721" />
-    <state width="1602" height="226" key="GridCell.Tab.1.left" timestamp="1576849140720">
+    <state width="1604" height="276" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566024" />
+    <state width="1604" height="276" key="GridCell.Tab.1.right" timestamp="1579711566025">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140720" />
-    <state width="1602" height="226" key="GridCell.Tab.1.right" timestamp="1576849140721">
+    <state width="1604" height="276" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566025" />
+    <state width="1604" height="276" key="GridCell.Tab.2.bottom" timestamp="1579711566027">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140721" />
-    <state width="1602" height="226" key="GridCell.Tab.2.bottom" timestamp="1576849140724">
+    <state width="1604" height="276" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566027" />
+    <state width="1604" height="276" key="GridCell.Tab.2.center" timestamp="1579711566026">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140724" />
-    <state width="1602" height="226" key="GridCell.Tab.2.center" timestamp="1576849140723">
+    <state width="1604" height="276" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566026" />
+    <state width="1604" height="276" key="GridCell.Tab.2.left" timestamp="1579711566026">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140723" />
-    <state width="1602" height="226" key="GridCell.Tab.2.left" timestamp="1576849140723">
+    <state width="1604" height="276" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566026" />
+    <state width="1604" height="276" key="GridCell.Tab.2.right" timestamp="1579711566026">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140723" />
-    <state width="1602" height="226" key="GridCell.Tab.2.right" timestamp="1576849140723">
+    <state width="1604" height="276" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579711566026" />
+    <state width="1604" height="276" key="GridCell.Tab.3.bottom" timestamp="1579708161349">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1576849140723" />
-    <state width="1602" height="226" key="GridCell.Tab.3.bottom" timestamp="1576848069726">
+    <state width="1604" height="276" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579708161349" />
+    <state width="1604" height="276" key="GridCell.Tab.3.center" timestamp="1579708161347">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1576848069726" />
-    <state width="1602" height="226" key="GridCell.Tab.3.center" timestamp="1576848069725">
+    <state width="1604" height="276" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579708161347" />
+    <state width="1604" height="276" key="GridCell.Tab.3.left" timestamp="1579708161347">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1576848069725" />
-    <state width="1602" height="226" key="GridCell.Tab.3.left" timestamp="1576848069725">
+    <state width="1604" height="276" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579708161347" />
+    <state width="1604" height="276" key="GridCell.Tab.3.right" timestamp="1579708161349">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1576848069725" />
-    <state width="1602" height="226" key="GridCell.Tab.3.right" timestamp="1576848069726">
+    <state width="1604" height="276" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579708161349" />
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1579711286590">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1602" height="226" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1576848069726" />
-    <state x="443" y="136" width="1024" height="840" key="SettingsEditor" timestamp="1576003694860">
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1579711286590" />
+    <state x="376" y="257" width="1157" height="598" key="new project wizard" timestamp="1579554276750">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="443" y="136" width="1024" height="840" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1576003694860" />
-    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1576794733249">
+    <state x="376" y="257" width="1157" height="598" key="new project wizard/0.40.1920.1040@0.40.1920.1040" timestamp="1579554276750" />
+    <state x="624" y="258" width="672" height="677" key="run.anything.popup" timestamp="1579691906236">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1576794733249" />
-    <state x="376" y="257" width="1157" height="598" key="new project wizard" timestamp="1576265632635">
+    <state x="624" y="258" width="672" height="677" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1579691906236" />
+    <state x="623" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1579635092920">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="376" y="257" width="1157" height="598" key="new project wizard/0.40.1920.1040@0.40.1920.1040" timestamp="1576265632635" />
-    <state x="624" y="258" key="run.anything.popup" timestamp="1576814663229">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="624" y="258" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1576814663229" />
+    <state x="623" y="268" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1579635092920" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/LoginCadastroUtilities.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
           <line>24</line>
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/EditaController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/EditaController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="((FileOutputStream)destino.fd.parent).path" custom="java.io.FileOutputStream" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

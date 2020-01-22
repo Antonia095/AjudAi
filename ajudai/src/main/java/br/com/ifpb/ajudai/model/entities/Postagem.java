@@ -1,7 +1,5 @@
 package br.com.ifpb.ajudai.model.entities;
 
-import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +23,12 @@ public class Postagem {
         this.dataPostagem = dataPostagem;
         this.nomeUsuario = nomeUsuario;
         this.comentarios = new ArrayList<>();
+    }
+
+    public Postagem(LocalDate dataPostagem, String descricao, String nomeUsuario){
+        this.dataPostagem = dataPostagem;
+        this.descricao = descricao;
+        this.nomeUsuario = nomeUsuario;
     }
 
     public int getCodigo() {

@@ -40,5 +40,4 @@ public class Comentario {
     public void setDataPostagem(LocalDate dataPostagem) {
         this.dataPostagem = dataPostagem;
     }
-
 }

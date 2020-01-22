@@ -2,6 +2,7 @@ package br.com.ifpb.ajudai.controller;
 
 import br.com.ifpb.ajudai.controller.utilities.ImagemCaminhoUtilities;
 import br.com.ifpb.ajudai.controller.utilities.LoginCadastroUtilities;
+import br.com.ifpb.ajudai.controller.utilities.PrateleiraUtilities;
 import br.com.ifpb.ajudai.model.entities.Usuario;
 
 import javax.servlet.ServletException;
@@ -9,11 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
 
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
@@ -29,9 +26,14 @@ public class LoginController extends HttpServlet {
         String resultado = LoginCadastroUtilities.usuarioExistente(id,senha);
         if(resultado.toUpperCase().equals("SUCESSO")){
             Usuario usuario = LoginCadastroUtilities.buscaUsuario(id);
-            String imagem = ImagemCaminhoUtilities.seta(usuario,req);
-            usuario.setImagem(imagem);
+            if(!usuario.getImagem().toUpperCase().equals("IMAGES/USER.SVG")){
+                String imagem = ImagemCaminhoUtilities.seta(usuario,req);
+                usuario.setImagem(imagem);
+            }else{
+                ImagemCaminhoUtilities.seta(usuario,req);
+            }
             req.getSession().setAttribute("usuario",usuario);
+            PrateleiraUtilities.setaPrateleiras(req);
             resp.getWriter().print(resultado);
         }else{
             resp.getWriter().print(resultado);

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>AjudAí - entre ou cadastre-se </title>
 </head>
 
@@ -53,7 +53,7 @@
             </div>
             <br><br>
             <div class="botaos center">
-                <a href="pages/etapaum.jsp"><button class="botao-inscrever bt1">Inscreva-se</button></a>
+                <a href="inscricao"><button class="botao-inscrever bt1">Inscreva-se</button></a>
                 <br><br>
                 <a class="modal-trigger" href="#modaLogin"><button class="botao-entrar bt2">Entrar</button></a>
             </div>
@@ -86,8 +86,8 @@
 <!-- Modal corpo -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="javascript/particleground.js"></script>
-<script src="javascript/index.js"></script>
+<script src="js/particleground.js"></script>
+<script src="js/home.js"></script>
 </body>
 
 </html>

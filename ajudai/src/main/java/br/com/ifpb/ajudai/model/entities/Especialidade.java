@@ -24,5 +24,4 @@ public class Especialidade extends Usuario {
     public void setArea(String area) {
         this.area = area;
     }
-
 }

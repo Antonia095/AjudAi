@@ -37,7 +37,7 @@ public class UsuarioDao implements EntitiesDao {
             PreparedStatement statement = connection.prepareStatement("DELETE FROM USUARIO WHERE nomeusuario = ? OR" +
                     " email = ?");
             statement.setString(1,usuario.getNomeUsuario());
-            statement.setString(2,usuario.getImagem());
+            statement.setString(2,usuario.getEmail());
             return statement.executeUpdate()>0;
         }
     }
@@ -47,14 +47,13 @@ public class UsuarioDao implements EntitiesDao {
         try(Connection connection = conFactory.getConnection()){
             Usuario usuario = (Usuario) object;
             PreparedStatement statement = connection.prepareStatement("UPDATE USUARIO SET nomecompleto = ?, " +
-                    "datanascimento = ?, email = ?, senha = ?, imagem = ?, telefone = ? WHERE nomeusuario = ?");
+                    "datanascimento = ?, email = ?, imagem = ?, telefone = ? WHERE nomeusuario = ?");
             statement.setString(1,usuario.getNomeCompleto());
-            statement.setDate(2,Date.valueOf(usuario.getDataNascimento()));
+            statement.setDate(2, Date.valueOf(usuario.getDataNascimento()));
             statement.setString(3,usuario.getEmail());
-            statement.setString(4,String.valueOf(usuario.hashCode()));
-            statement.setString(5,usuario.getImagem());
-            statement.setString(6,usuario.getTelefone());
-            statement.setString(7,usuario.getNomeUsuario());
+            statement.setString(4,usuario.getImagem());
+            statement.setString(5,usuario.getTelefone());
+            statement.setString(6,usuario.getNomeUsuario());
 
             return statement.executeUpdate()>0;
         }
@@ -78,6 +77,28 @@ public class UsuarioDao implements EntitiesDao {
                 return null;
             }
 
+        }
+    }
+
+    public boolean acesso(String id) throws SQLException, ClassNotFoundException {
+        try(Connection connection = conFactory.getConnection()){
+            PreparedStatement statement = connection.prepareStatement("SELECT acesso FROM USUARIO WHERE nomeusuario = ? OR " +
+                    "email = ?");
+            statement.setString(1,id);
+            statement.setString(2,id);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            return resultSet.getBoolean("acesso");
+
+        }
+    }
+
+    public boolean atualizaAcesso(String id) throws SQLException, ClassNotFoundException {
+        try(Connection connection = conFactory.getConnection()){
+            PreparedStatement statement = connection.prepareStatement("UPDATE USUARIO SET acesso = ? WHERE nomeusuario = ?");
+            statement.setBoolean(1,true);
+            statement.setString(2,id);
+            return statement.executeUpdate()>0;
         }
     }
 }

@@ -3,6 +3,9 @@ package br.com.ifpb.ajudai.model.persistence.dao;
 import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
 import br.com.ifpb.ajudai.model.persistence.ConnectionFactory;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class EstanteDao implements EntitiesDao {
@@ -29,6 +32,12 @@ public class EstanteDao implements EntitiesDao {
 
     @Override
     public Object searchEntities(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        try(Connection connection = conFactory.getConnection()){
+            PreparedStatement statement = connection.prepareStatement("SELECT id FROM ESTANTE WHERE nomeusuario = ?");
+            statement.setString(1,id);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            return resultSet.getInt("id");
+        }
     }
 }

@@ -1,7 +1,5 @@
 package br.com.ifpb.ajudai.model.entities;
 
-import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +10,7 @@ public class Prateleira {
     private String descricao;
     private LocalDate dataCriacao;
     private String tipo;
+    private int idEstante;
     private List<Conteudo> conteudos;
 
     public Prateleira() {
@@ -25,6 +24,13 @@ public class Prateleira {
         this.dataCriacao = dataCriacao;
         this.tipo = tipo;
         this.conteudos = new ArrayList<>();
+    }
+
+    public Prateleira(String nome, String descricao, String tipo, int idEstante) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.tipo = tipo;
+        this.idEstante = idEstante;
     }
 
     public int getCodigo() {
@@ -67,6 +73,14 @@ public class Prateleira {
         this.tipo = tipo;
     }
 
+    public int getIdEstante() {
+        return idEstante;
+    }
+
+    public void setIdEstante(int idEstante) {
+        this.idEstante = idEstante;
+    }
+
     public List<Conteudo> getConteudos() {
         return conteudos;
     }
@@ -81,5 +95,9 @@ public class Prateleira {
 
     public boolean removeEntities(Object object) {
         return conteudos.remove((Conteudo)object);
+    }
+
+    public String codString(){
+        return this.nome.substring(0,2) + String.valueOf(this.codigo);
     }
 }

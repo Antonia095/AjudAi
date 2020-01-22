@@ -1,15 +1,19 @@
 package br.com.ifpb.ajudai.model.entities;
 
-import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
-
 import java.time.LocalDate;
 import java.util.List;
 
-public class Especialista  extends Usuario {
+public class Especialista extends Usuario {
+    private String nomeUser;
     private String descricao;
     private List<Especialidade> especialidades;
 
     public Especialista() {
+    }
+
+    public Especialista(String nomeUsuario, String descricao){
+        this.descricao = descricao;
+        this.nomeUser = nomeUsuario;
     }
 
     public Especialista(String nomeUsuario, String nomeCompleto, LocalDate dataNascimento,
@@ -25,6 +29,10 @@ public class Especialista  extends Usuario {
 
     public String getDescricao() {
         return descricao;
+    }
+
+    public String getNomeUser() {
+        return nomeUser;
     }
 
     public void setDescricao(String descricao) {
