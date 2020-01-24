@@ -26,6 +26,7 @@ import java.util.Date;
 )
 public class EditaController extends HttpServlet {
     private String nomeImagem;
+    private String novaImagem;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,33 +43,50 @@ public class EditaController extends HttpServlet {
         Usuario usuario = (Usuario) req.getSession().getAttribute("usuario");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         String dataNascimento  = req.getParameter("nascimentoUser");
-        String nomeCompleto = req.getParameter("nomeComUser");
         String telefone = req.getParameter("telefoneUser");
         usuario.setDataNascimento(LocalDate.parse(dataNascimento,formatter));
-        usuario.setNomeCompleto(nomeCompleto);
         usuario.setTelefone(telefone);
-        usuario.setImagem(getImagem(req));
+        this.novaImagem = getImagem(req);
+        boolean fotoSituacao = true;
         UsuarioDao usuarioDao = new UsuarioDao();
+        if(novaImagem.equals("")){
+            Usuario user = null;
+            try{
+                user = (Usuario) usuarioDao.searchEntities(usuario.getNomeUsuario());
+            }catch (SQLException | ClassNotFoundException e){
+                e.printStackTrace();
+            }
+            this.novaImagem = user.getImagem();
+            fotoSituacao = (!user.getImagem().toUpperCase().equals("IMAGES/USER.SVG")) ? fotoSituacao : false;
+        }
+        usuario.setImagem(novaImagem);
         try{
             usuarioDao.updateEntities(usuario);
         }catch (SQLException | ClassNotFoundException e){
             e.printStackTrace();
         }
-        usuario.setImagem(ImagemCaminhoUtilities.seta(usuario,req));
+        if(fotoSituacao){
+            usuario.setImagem(ImagemCaminhoUtilities.seta(usuario,req));
+        }
         req.getSession().setAttribute("usuario",usuario);
         resp.sendRedirect("pages/usuario/usuario.jsp");
     }
 
     private String getImagem(HttpServletRequest req) throws IOException, ServletException {
         Part part = req.getPart("fupload");
-        String projeto = ImagemCaminhoUtilities.path(new File(".").getCanonicalPath()) +"IMAGENS";
-        File imagens = new File(projeto);
-        this.nomeImagem = String.valueOf(new Date()) + part.getSubmittedFileName();
+        if(!part.getSubmittedFileName().equals("")){
+            String projeto = ImagemCaminhoUtilities.path(new File(".").getCanonicalPath()) +"IMAGENS";
+            File imagens = new File(projeto);
+            this.nomeImagem = String.valueOf(new Date()) + part.getSubmittedFileName();
 
-        if(!imagens.isDirectory()){
-            imagens.mkdir();
+            if(!imagens.isDirectory()){
+                imagens.mkdir();
+            }
+            part.write(imagens.getAbsolutePath() + File.separator + this.nomeImagem);
+            return imagens.getAbsolutePath() + File.separator + this.nomeImagem;
+        }else{
+            return "";
         }
-        part.write(imagens.getAbsolutePath() + File.separator + this.nomeImagem);
-        return imagens.getAbsolutePath() + File.separator + this.nomeImagem;
+
     }
 }

@@ -92,7 +92,8 @@ $('#btExcluiConta').click(function () {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Sim, desejo!'
+        confirmButtonText: 'Sim, desejo!',
+        cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.value) {
             $.ajax({
