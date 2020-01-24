@@ -154,7 +154,7 @@
 <div id="modalConta" class="modal">
     <br><br>
     <div class="modal-content center row">
-        <img src="" class="circle icon-user">
+        <img id="imageConta" src="" class="circle icon-user">
         <form action="/ajudai/dados" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field center">
                 <div class="form-group">
