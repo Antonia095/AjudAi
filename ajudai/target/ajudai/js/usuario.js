@@ -1,5 +1,5 @@
 $('.dropdown-trigger').dropdown();
-
+$('#telefoneUser').mask('(00) 00000-0000');
 $('#search').keypress(function(event){
     if(event.which==13){
         alert(event.code)
@@ -72,7 +72,6 @@ $('#btContaDados').click(function () {
         data: {valor: 1}
     })
         .done(function (msg) {
-            console.log(msg.nomeUsuario);
             var usuario = JSON.parse(msg);
             var dia = (JSON.stringify(usuario.dataNascimento.day).length==1)? "0"+JSON.stringify(usuario.dataNascimento.day):JSON.stringify(usuario.dataNascimento.day);
             var mes = (JSON.stringify(usuario.dataNascimento.month).length==1)? "0"+JSON.stringify(usuario.dataNascimento.month):JSON.stringify(usuario.dataNascimento.month);
@@ -81,6 +80,7 @@ $('#btContaDados').click(function () {
             $('#dataUser').val(dia+"/"+mes+"/"+usuario.dataNascimento.year);
             $('#telefoneUser').val(usuario.telefone);
             $('#nomeComUser').val(usuario.nomeCompleto);
+            recuperaImagem();
         })
 })
 
@@ -107,4 +107,13 @@ $('#btExcluiConta').click(function () {
     })
 })
 
-$()
+function recuperaImagem(){
+    var setImagem = document.querySelector("#imageConta");
+    $.ajax({
+        method: "POST",
+        url: "/ajudai/imagemedit"
+    })
+    .done(function (msg) {
+        setImagem.setAttribute("src","../../"+msg);
+    })
+}

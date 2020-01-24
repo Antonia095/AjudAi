@@ -78,11 +78,12 @@
 
 
 <!--Modais de upload-->
-
 <div id="modalLinkConteudo" class="modal tam-modal">
     <div class="modal-content center row">
         <div class="input-field col s12">
+            <i class="material-icons prefix">http</i>
             <input id="linkConteudo" type="text" placeholder="Link para o conteúdo">
+            <label for="linkConteudo"></label>
         </div>
         <div class="input-field col s12">
             <textarea id="linkDescricao" placeholder="Descrição..."></textarea>
@@ -93,7 +94,6 @@
     </div>
 </div>
 
-
 <div id="modalMaterial" class="modal tam-modal">
     <div class="modal-content center row">
         <form action="">
@@ -102,7 +102,7 @@
             </div>
             <div class="input-field col s12">
                 <div class="file-field input-field">
-                    <span class="material-icons prefix image-image">image</span>
+                    <span class="material-icons prefix image-image">video_library</span>
                     <input name="foto" class="input-file" type="file" required>
                     <div class="file-path-wrapper">
                         <input class="file-path validate input-file" type="text" placeholder="Selecione imagem">
@@ -119,7 +119,6 @@
         </form>
     </div>
 </div>
-
 <!--Modais de upload-->
 
 
@@ -154,7 +153,7 @@
 <div id="modalConta" class="modal">
     <br><br>
     <div class="modal-content center row">
-        <img src="" class="circle icon-user">
+        <img id="imageConta" src="" class="circle icon-user">
         <form action="/ajudai/dados" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field center">
                 <div class="form-group">
@@ -192,6 +191,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="../../js/usuario.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>

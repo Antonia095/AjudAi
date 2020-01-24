@@ -29,8 +29,6 @@ public class LoginController extends HttpServlet {
             if(!usuario.getImagem().toUpperCase().equals("IMAGES/USER.SVG")){
                 String imagem = ImagemCaminhoUtilities.seta(usuario,req);
                 usuario.setImagem(imagem);
-            }else{
-                ImagemCaminhoUtilities.seta(usuario,req);
             }
             req.getSession().setAttribute("usuario",usuario);
             PrateleiraUtilities.setaPrateleiras(req);
