@@ -86,6 +86,9 @@
             <label for="linkConteudo"></label>
         </div>
         <div class="input-field col s12">
+            <input id="nomeLink" placeholder="Nome do conteúdo">
+        </div>
+        <div class="input-field col s12">
             <textarea id="linkDescricao" placeholder="Descrição..."></textarea>
         </div>
     </div>

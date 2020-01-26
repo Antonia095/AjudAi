@@ -173,3 +173,28 @@ async function addEspecialidades() {
     }
 }
 
+$('#btSubmitLink').click(function () {
+    var link = $('#linkConteudo').val();
+    var descricaoLink = $('#linkDescricao').val();
+    var nomeConteudo = $('#nomeLink').val()
+    if((link.trim().length==0)||(descricaoLink.trim().length==0)||(nomeConteudo.trim().length==0)){
+        Swal.fire('Erro','Preencha todos os campos','error');
+    }else{
+        link = (validaLink(link)) ? link : "";
+        if(link.length<=0){
+            Swal.fire('Aviso','Link inválido','info');
+        }else{
+            $.ajax({
+                method: "POST",
+                url: "/ajudai/adicionarlink",
+                data:{link: link, descricao: descricaoLink, nomeConteudo: nomeConteudo}
+            })
+        }
+    }
+
+})
+
+function validaLink(link) {
+    return link.indexOf("http") >= 0;
+}
+

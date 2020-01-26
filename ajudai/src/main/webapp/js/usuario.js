@@ -176,14 +176,19 @@ async function addEspecialidades() {
 $('#btSubmitLink').click(function () {
     var link = $('#linkConteudo').val();
     var descricaoLink = $('#linkDescricao').val();
-    if((link.trim().length==0)||(descricaoLink.trim().length==0)){
+    var nomeConteudo = $('#nomeLink').val()
+    if((link.trim().length==0)||(descricaoLink.trim().length==0)||(nomeConteudo.trim().length==0)){
         Swal.fire('Erro','Preencha todos os campos','error');
     }else{
         link = (validaLink(link)) ? link : "";
         if(link.length<=0){
             Swal.fire('Aviso','Link inválido','info');
         }else{
-            li
+            $.ajax({
+                method: "POST",
+                url: "/ajudai/adicionarlink",
+                data:{link: link, descricao: descricaoLink, nomeConteudo: nomeConteudo}
+            })
         }
     }
 

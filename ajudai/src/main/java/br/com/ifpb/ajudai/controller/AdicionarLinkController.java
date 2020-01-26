@@ -13,5 +13,8 @@ public class AdicionarLinkController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String link = req.getParameter("link");
         String descricao = req.getParameter("descricao");
+        String nomeConteudo = req.getParameter("nomeConteudo");
+
+
     }
 }
