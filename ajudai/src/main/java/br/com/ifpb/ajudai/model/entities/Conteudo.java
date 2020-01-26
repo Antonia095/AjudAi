@@ -2,7 +2,6 @@ package br.com.ifpb.ajudai.model.entities;
 
 public class Conteudo {
     private int codigo;
-    private String descricao;
     private String nome;
     private String local;
 
@@ -13,7 +12,6 @@ public class Conteudo {
         this.codigo = codigo;
         this.nome = nome;
         this.local = local;
-        this.descricao = descricao;
     }
 
     public int getCodigo() {

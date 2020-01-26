@@ -65,7 +65,7 @@ public class GatilhhosUtilities extends HttpServlet {
                 resp.getWriter().print("concluir");
             }
         }catch (SQLException | ClassNotFoundException e){
-            e.printStackTrace();
+            resp.getWriter().print("");
         }
         resp.getWriter().print("");
     }

@@ -9,13 +9,13 @@
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>639</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|24799|24801|1
-sequence|table|24754|24756|1
+      <Relations>sequence|table|24754|24756|1
 sequence|table|24775|24777|1
-sequence|table|24791|24793|1
 sequence|table|24684|24686|1
 sequence|table|24697|24699|1
 sequence|table|24713|24715|1
+sequence|table|24799|24801|1
+sequence|table|24791|24793|1
 </Relations>
     </database>
     <database id="3" parent="1" name="Loja">

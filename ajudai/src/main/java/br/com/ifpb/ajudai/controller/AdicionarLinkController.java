@@ -14,7 +14,5 @@ public class AdicionarLinkController extends HttpServlet {
         String link = req.getParameter("link");
         String descricao = req.getParameter("descricao");
         String nomeConteudo = req.getParameter("nomeConteudo");
-
-
     }
 }

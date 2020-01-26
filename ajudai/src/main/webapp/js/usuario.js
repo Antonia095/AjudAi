@@ -189,6 +189,9 @@ $('#btSubmitLink').click(function () {
                 url: "/ajudai/adicionarlink",
                 data:{link: link, descricao: descricaoLink, nomeConteudo: nomeConteudo}
             })
+                .done(function (msg) {
+                    window.location.reload();
+                })
         }
     }
 
