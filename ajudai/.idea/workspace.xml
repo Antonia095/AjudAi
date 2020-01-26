@@ -7,18 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103565c1-9d32-46b0-ad58-25ce38f8826f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/utilities/ImagemEditUtilities.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/utilities/ImagemEditUtilities.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/AdicionarLinkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd9c9e48-1844-4057-a1c3-c7b9c6bd848e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd9c9e48-1844-4057-a1c3-c7b9c6bd848e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/usuario.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/usuario/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/usuario/usuario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ajudai.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ajudai/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/js/usuario.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ajudai/pages/usuario/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/pages/usuario/usuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ajudai" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -217,6 +219,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -257,7 +264,9 @@
       <workItem from="1579863521657" duration="1568000" />
       <workItem from="1579865823980" duration="5460000" />
       <workItem from="1579871383967" duration="3445000" />
-      <workItem from="1579889045344" duration="475000" />
+      <workItem from="1579889045344" duration="1754000" />
+      <workItem from="1579969935443" duration="3244000" />
+      <workItem from="1580055078587" duration="9029000" />
     </task>
     <servers />
   </component>
@@ -265,6 +274,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="550" y="219" width="800" height="672" key="#Notifications" timestamp="1580056695599">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="550" y="219" width="800" height="672" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1580056695599" />
     <state x="418" y="217" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579636503775">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -285,74 +298,74 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1579575546026" />
-    <state width="1595" height="274" key="GridCell.Tab.0.bottom" timestamp="1579875251484">
+    <state width="1595" height="274" key="GridCell.Tab.0.bottom" timestamp="1580066018782">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251484" />
-    <state width="1595" height="274" key="GridCell.Tab.0.center" timestamp="1579875251484">
+    <state width="1595" height="274" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018782" />
+    <state width="1595" height="274" key="GridCell.Tab.0.center" timestamp="1580066018781">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251484" />
-    <state width="1595" height="274" key="GridCell.Tab.0.left" timestamp="1579875251483">
+    <state width="1595" height="274" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018781" />
+    <state width="1595" height="274" key="GridCell.Tab.0.left" timestamp="1580066018780">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251483" />
-    <state width="1595" height="274" key="GridCell.Tab.0.right" timestamp="1579875251484">
+    <state width="1595" height="274" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018780" />
+    <state width="1595" height="274" key="GridCell.Tab.0.right" timestamp="1580066018781">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251484" />
-    <state width="1595" height="274" key="GridCell.Tab.1.bottom" timestamp="1579875251457">
+    <state width="1595" height="274" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018781" />
+    <state width="1595" height="274" key="GridCell.Tab.1.bottom" timestamp="1580066018784">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251457" />
-    <state width="1595" height="274" key="GridCell.Tab.1.center" timestamp="1579875251457">
+    <state width="1595" height="274" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018784" />
+    <state width="1595" height="274" key="GridCell.Tab.1.center" timestamp="1580066018784">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251457" />
-    <state width="1595" height="274" key="GridCell.Tab.1.left" timestamp="1579875251456">
+    <state width="1595" height="274" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018784" />
+    <state width="1595" height="274" key="GridCell.Tab.1.left" timestamp="1580066018783">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251456" />
-    <state width="1595" height="274" key="GridCell.Tab.1.right" timestamp="1579875251457">
+    <state width="1595" height="274" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018783" />
+    <state width="1595" height="274" key="GridCell.Tab.1.right" timestamp="1580066018784">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251457" />
-    <state width="1595" height="274" key="GridCell.Tab.2.bottom" timestamp="1579875251458">
+    <state width="1595" height="274" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018784" />
+    <state width="1595" height="274" key="GridCell.Tab.2.bottom" timestamp="1580066018787">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251458" />
-    <state width="1595" height="274" key="GridCell.Tab.2.center" timestamp="1579875251458">
+    <state width="1595" height="274" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018787" />
+    <state width="1595" height="274" key="GridCell.Tab.2.center" timestamp="1580066018786">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251458" />
-    <state width="1595" height="274" key="GridCell.Tab.2.left" timestamp="1579875251457">
+    <state width="1595" height="274" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018786" />
+    <state width="1595" height="274" key="GridCell.Tab.2.left" timestamp="1580066018786">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251457" />
-    <state width="1595" height="274" key="GridCell.Tab.2.right" timestamp="1579875251458">
+    <state width="1595" height="274" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018786" />
+    <state width="1595" height="274" key="GridCell.Tab.2.right" timestamp="1580066018787">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579875251458" />
-    <state width="1595" height="274" key="GridCell.Tab.3.bottom" timestamp="1579874397996">
+    <state width="1595" height="274" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580066018787" />
+    <state width="1595" height="274" key="GridCell.Tab.3.bottom" timestamp="1580063852229">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1579874397996" />
-    <state width="1595" height="274" key="GridCell.Tab.3.center" timestamp="1579874397995">
+    <state width="1595" height="274" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580063852229" />
+    <state width="1595" height="274" key="GridCell.Tab.3.center" timestamp="1580063852228">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1579874397995" />
-    <state width="1595" height="274" key="GridCell.Tab.3.left" timestamp="1579874397995">
+    <state width="1595" height="274" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580063852228" />
+    <state width="1595" height="274" key="GridCell.Tab.3.left" timestamp="1580063852227">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1579874397995" />
-    <state width="1595" height="274" key="GridCell.Tab.3.right" timestamp="1579874397996">
+    <state width="1595" height="274" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580063852227" />
+    <state width="1595" height="274" key="GridCell.Tab.3.right" timestamp="1580063852228">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1595" height="274" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1579874397996" />
-    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1579889518979">
+    <state width="1595" height="274" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580063852228" />
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1580055130817">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1579889518979" />
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1580055130817" />
     <state x="376" y="257" width="1157" height="598" key="new project wizard" timestamp="1579554276750">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -365,61 +378,5 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="623" y="268" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1579635092920" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/GatilhhosUtilities.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

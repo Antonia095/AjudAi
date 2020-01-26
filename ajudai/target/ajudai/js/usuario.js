@@ -5,11 +5,11 @@ $('#search').keypress(function(event){
         alert(event.code)
     }
 });
+$('#tipoPrateleira').formSelect();
 
 
 $(document).ready(function () {
     $('.modal').modal();
-    $('select').formSelect();
     $('#dataUser').datepicker({
         format: 'dd/mm/yyyy',
         i18n:{
@@ -21,6 +21,20 @@ $(document).ready(function () {
             weekdaysAbbrev: ['D','S','T','Q','Q','S','S']
         }
     });
+
+    var bodyId = document.querySelector('#body');
+    bodyId.addEventListener('click', function () {
+        $.ajax({
+            method: "POST",
+            url: "/ajudai/gatilho",
+            data: {valor: 2}
+        })
+            .done(function (msg) {
+                if(msg.length>2){
+                    window.location.reload();
+                }
+            })
+    })
 });
 
 $('#btCriar').click(function () {
@@ -63,7 +77,6 @@ $('#submitLink').click(function () {
         });
     }
 })
-
 
 $('#btContaDados').click(function () {
     $.ajax({
@@ -117,3 +130,46 @@ function recuperaImagem(){
         setImagem.setAttribute("src","../../"+msg);
     })
 }
+
+function resetaMensagemInicio() {
+    $.ajax({
+        method: "POST",
+        url: "/ajudai/gatilho",
+        data: {valor: 1}
+    })
+}
+
+async function addEspecialidades() {
+    const { value: text } = await Swal.fire({
+        input: 'textarea',
+        inputPlaceholder: 'Adicione suas especialidades',
+        inputAttributes: {
+            'aria-label': 'Type your message here'
+        },
+        confirmButtonText: 'Adicionar',
+        cancelButtonText: 'Adicionar depois',
+        showCancelButton: true
+    })
+
+    if (text) {
+        $.ajax({
+            method: "POST",
+            url: "/ajudai/gatilho",
+            data:{valor: 3, descricao: text}
+        })
+            .done(function () {
+                window.location.reload()
+            })
+
+    }else{
+        $.ajax({
+            method: "POST",
+            url: "/ajudai/gatilho",
+            data:{valor: 4}
+        })
+            .done(function () {
+                window.location.reload();
+            })
+    }
+}
+

@@ -21,33 +21,53 @@ public class GatilhhosUtilities extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if(req.getParameter("valor").equals("1")){
             gatilhoBemVindo(req);
-            acionaIncricaoEspecialista(req,resp);
-            if(req.getParameter("valor")!=null){
-                Usuario usuario = (Usuario) req.getSession().getAttribute("usuario");
-                try{
-                    new EspecialistaDao().updateEntities(new Especialista(usuario.getNomeUsuario(), req.getParameter("descricao")));
-                }catch (SQLException | ClassNotFoundException e){
-                    e.printStackTrace();
-                }
+        }else if((req.getParameter("valor").equals("2"))&&(req.getSession().getAttribute("especialidade")==null)){
+            gatilhoEspecialistaConcluiCadastro(req,resp);
+        }else if(req.getParameter("valor").equals("3")){
+            addEspecialidade(req,resp);
+        }else{
+            req.getSession().setAttribute("especialidade",false);
+            resp.getWriter().print("");
+        }
+    }
+
+    private void addEspecialidade(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        Usuario usuario = (Usuario) req.getSession().getAttribute("usuario");
+        String descricao = (req.getParameter("descricao")==null) ? "" : req.getParameter("descricao");
+        EspecialistaDao especialistaDao = new EspecialistaDao();
+        req.getSession().setAttribute("especialidade",false);
+        try{
+            if(especialistaDao.updateEntities(new Especialista(usuario.getNomeUsuario(),descricao))){
+                resp.getWriter().print("");
+
+            }else{
+                resp.getWriter().print("erro");
             }
+
+        }catch (SQLException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
+
     }
 
     private void gatilhoBemVindo(HttpServletRequest req){
         req.getSession().setAttribute("bemVindo",false);
     }
 
-    private void acionaIncricaoEspecialista(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    private void gatilhoEspecialistaConcluiCadastro(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         Usuario usuario = (Usuario) req.getSession().getAttribute("usuario");
         EspecialistaDao especialistaDao = new EspecialistaDao();
         try{
             if(especialistaDao.searchEntities(usuario.getNomeUsuario())==null){
+                req.getSession().setAttribute("especialidade",true);
                 resp.getWriter().print("concluir");
             }
         }catch (SQLException | ClassNotFoundException e){
             e.printStackTrace();
         }
-
         resp.getWriter().print("");
     }
+
 }

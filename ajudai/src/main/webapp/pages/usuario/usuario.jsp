@@ -90,20 +90,20 @@
         </div>
     </div>
     <div class="center">
-        <button id="submitLink" class="btn btn-modal ">Enviar</button>
+        <button id="btSubmitLink" class="btn btn-modal ">Enviar</button>
     </div>
 </div>
 
 <div id="modalMaterial" class="modal tam-modal">
     <div class="modal-content center row">
-        <form action="">
+        <form action="" enctype="multipart/form-data">
             <div class="input-field col s12">
                 <input name="nomeConteudo" type="text" placeholder="Nome" required>
             </div>
             <div class="input-field col s12">
                 <div class="file-field input-field">
-                    <span class="material-icons prefix image-image">video_library</span>
-                    <input name="foto" class="input-file" type="file" required>
+                    <span class="material-icons prefix image-image">class</span>
+                    <input name="conteudo" class="input-file" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx" required>
                     <div class="file-path-wrapper">
                         <input class="file-path validate input-file" type="text" placeholder="Selecione imagem">
                     </div>
@@ -158,7 +158,7 @@
             <div class="file-field input-field center">
                 <div class="form-group">
                     <label for="fupload" class="btn-edit">Editar foto</label>
-                    <input type="file" id="fupload" name="fupload" />
+                    <input type="file" id="fupload" name="fupload" accept="image/*" />
                 </div>
             </div>
             <div class="modal-content center row">
@@ -194,5 +194,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="../../js/usuario.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<c:if test="${sessionScope.bemVindo==true}">
+    <script>
+        Swal.fire({
+            title: 'Bem-Vindo',
+            text: 'Obrigado por fazer parte do AjudAí. O melhor repositório online de conteúdos acadêmicos.',
+            imageUrl: '../../images/logo.png',
+            imageWidth: 100,
+            imageHeight: 110,
+            confirmButtonText: 'Ok!'
+        }).then((result) => {
+            resetaMensagemInicio();
+        });
+    </script>
+</c:if>
+<c:if test="${sessionScope.especialidade==true}">
+    <script>
+        addEspecialidades();
+    </script>
+</c:if>
 </body>
 </html>
