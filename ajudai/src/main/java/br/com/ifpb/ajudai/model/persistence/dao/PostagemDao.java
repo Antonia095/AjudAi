@@ -21,10 +21,11 @@ public class PostagemDao implements EntitiesDao {
         try(Connection connection = conFactory.getConnection()){
             Postagem postagem = (Postagem) object;
             PreparedStatement statement = connection.prepareStatement("INSERT INTO POSTAGEM(descricao, datapostagem," +
-                    " nomeusuario) VALUES(?,?,?)");
+                    " nomeusuario, codconteudo) VALUES(?,?,?,?)");
             statement.setString(1,postagem.getDescricao());
             statement.setDate(2,Date.valueOf(postagem.getDataPostagem()));
             statement.setString(3,postagem.getNomeUsuario());
+            statement.setInt(4,postagem.getCodConteudo());
             return statement.executeUpdate()>0;
         }
     }

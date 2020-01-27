@@ -8,8 +8,13 @@ public class Conteudo {
     public Conteudo() {
     }
 
-    public Conteudo(int codigo, String nome, String local, String descricao) {
+    public Conteudo(int codigo, String nome, String local) {
         this.codigo = codigo;
+        this.nome = nome;
+        this.local = local;
+    }
+
+    public Conteudo(String nome, String local) {
         this.nome = nome;
         this.local = local;
     }

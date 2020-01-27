@@ -10,18 +10,29 @@ public class Postagem {
     private String descricao;
     private LocalDate dataPostagem;
     private String nomeUsuario;
+    private int codConteudo;
     private List<Comentario> comentarios;
 
     public Postagem() {
         this.comentarios = new ArrayList<>();
     }
 
-    public Postagem(int codigo, String area, String descricao, LocalDate dataPostagem, String nomeUsuario) {
+    public Postagem(String descricao, LocalDate dataPostagem, String nomeUsuario, int codConteudo) {
         this.codigo = codigo;
         this.area = area;
         this.descricao = descricao;
         this.dataPostagem = dataPostagem;
         this.nomeUsuario = nomeUsuario;
+        this.codConteudo = codConteudo;
+    }
+
+    public Postagem(int codigo, String area, String descricao, LocalDate dataPostagem, String nomeUsuario, int codConteudo) {
+        this.codigo = codigo;
+        this.area = area;
+        this.descricao = descricao;
+        this.dataPostagem = dataPostagem;
+        this.nomeUsuario = nomeUsuario;
+        this.codConteudo = codConteudo;
         this.comentarios = new ArrayList<>();
     }
 
@@ -65,6 +76,14 @@ public class Postagem {
 
     public String getNomeUsuario() {
         return nomeUsuario;
+    }
+
+    public int getCodConteudo() {
+        return codConteudo;
+    }
+
+    public void setCodConteudo(int codConteudo) {
+        this.codConteudo = codConteudo;
     }
 
     public void setNomeUsuario(String nomeUsuario) {

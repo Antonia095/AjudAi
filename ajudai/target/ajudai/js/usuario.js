@@ -2,7 +2,20 @@ $('.dropdown-trigger').dropdown();
 $('#telefoneUser').mask('(00) 00000-0000');
 $('#search').keypress(function(event){
     if(event.which==13){
-        alert(event.code)
+        var valor = $('#search').val();
+        $.ajax({
+            method: "POST",
+            url:"/ajudai/buscaconteudo",
+            data:{busca:valor}
+        })
+            .done(function (msg) {
+                if(msg.length>2){
+                    geraPainel(JSON.parse(msg))
+                }else{
+                    $('#painel-direito').html('<h5>Material não encontrado</h5>');
+                }
+            })
+
     }
 });
 $('#tipoPrateleira').formSelect();
@@ -139,6 +152,11 @@ function resetaMensagemInicio() {
     })
 }
 
+function mostraEstante(){
+    var navEstante = "<div class=\"pos-direita\"><button class=\"btn\">Deletar</button><br><br>" +
+        "<label class=\"titulo-estante\">Texto</label></div>"
+}
+
 async function addEspecialidades() {
     const { value: text } = await Swal.fire({
         input: 'textarea',
@@ -199,5 +217,20 @@ $('#btSubmitLink').click(function () {
 
 function validaLink(link) {
     return link.indexOf("http") >= 0;
+}
+
+function geraPainel(conteudos) {
+    var painel = '<table>';
+
+    for(var k=1; k<=5; k++){
+        painel+='<tr>';
+        for (var i=1; i<3; i++){
+            painel+= '<td>' + geraCard() + '</td>';
+        }
+        painel+='</tr>';
+    }
+    painel+='</table>';
+
+    $('#painel-direito').html(painel);
 }
 

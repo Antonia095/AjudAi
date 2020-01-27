@@ -55,7 +55,7 @@
 <!--Estante-->
 
     <div class="col s9">
-        <div class="container center">
+        <div id="painel-direito" class="container center">
         </div>
     </div>
 </div>
@@ -99,7 +99,7 @@
 
 <div id="modalMaterial" class="modal tam-modal">
     <div class="modal-content center row">
-        <form action="" enctype="multipart/form-data">
+        <form action="/ajudai/adicionaconteudo" method="post" enctype="multipart/form-data">
             <div class="input-field col s12">
                 <input name="nomeConteudo" type="text" placeholder="Nome" required>
             </div>
@@ -195,6 +195,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="../../js/cards.js"></script>
 <script src="../../js/usuario.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <c:if test="${sessionScope.bemVindo==true}">

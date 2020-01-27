@@ -71,7 +71,7 @@ nav{
 }
 
 .tam-modal{
-    height: 390px !important;
+    height: 407px !important;
     width: 490px !important;
 }
 
@@ -104,4 +104,32 @@ nav{
 .icon-user{
     width: 75px;
     height: 85px;
+}
+
+.pos-direita{
+    float: right;
+}
+
+.titulo-estante{
+    font-size: 14px;
+    font-family: 'Ubuntu Condensed' ;
+}
+
+
+.card{
+    width: 320px !important;
+    height: 335px !important;
+}
+
+.total{
+    width: 100%;
+}
+
+.red{
+    position: relative;
+    top: 129px !important;
+}
+
+.btn-card{
+    border-radius: 20px 20px;
 }
