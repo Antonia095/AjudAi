@@ -6,6 +6,7 @@ public class Comentario {
     private int id;
     private String descricao;
     private LocalDate dataPostagem;
+    private int codPostagem;
 
     public Comentario() {
 
@@ -15,6 +16,12 @@ public class Comentario {
         this.id = id;
         this.descricao = descricao;
         this.dataPostagem = dataPostagem;
+        this.codPostagem = codPostagem;
+    }
+
+    public Comentario(int id, String descricao){
+        this.id = id;
+        this.descricao = descricao;
     }
 
     public int getId() {
@@ -39,5 +46,13 @@ public class Comentario {
 
     public void setDataPostagem(LocalDate dataPostagem) {
         this.dataPostagem = dataPostagem;
+    }
+
+    public int getCodPostagem() {
+        return codPostagem;
+    }
+
+    public void setCodPostagem(int codPostagem) {
+        this.codPostagem = codPostagem;
     }
 }

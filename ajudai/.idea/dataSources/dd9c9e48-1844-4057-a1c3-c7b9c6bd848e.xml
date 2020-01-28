@@ -12,11 +12,11 @@
       <Current>1</Current>
       <Relations>sequence|table|33071|33073|1
 sequence|table|33087|33089|1
+sequence|table|33128|33130|1
 sequence|table|33058|33060|1
 sequence|table|33173|33175|1
 sequence|table|33149|33151|1
 sequence|table|33165|33167|1
-sequence|table|33128|33130|1
 </Relations>
     </database>
     <database id="3" parent="1" name="Loja">

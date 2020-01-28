@@ -10,7 +10,7 @@ $('#search').keypress(function(event){
         })
             .done(function (msg) {
                 if(msg.length>2){
-                    geraPainel(JSON.parse(msg))
+                    console.log(JSON.parse(msg))
                 }else{
                     $('#painel-direito').html('<h5>Material não encontrado</h5>');
                 }
@@ -222,7 +222,7 @@ function validaLink(link) {
 function geraPainel(conteudos) {
     var painel = '<table>';
 
-    for(var k=1; k<=5; k++){
+    for(var k=0; k<=conteudos.length; k++){
         painel+='<tr>';
         for (var i=1; i<3; i++){
             painel+= '<td>' + geraCard() + '</td>';

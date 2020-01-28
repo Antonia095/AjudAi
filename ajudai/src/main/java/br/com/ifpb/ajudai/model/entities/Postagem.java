@@ -26,6 +26,12 @@ public class Postagem {
         this.codConteudo = codConteudo;
     }
 
+    public Postagem(int codigo, String descricao, int codConteudo) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.codConteudo = codConteudo;
+    }
+
     public Postagem(int codigo, String area, String descricao, LocalDate dataPostagem, String nomeUsuario, int codConteudo) {
         this.codigo = codigo;
         this.area = area;
@@ -40,6 +46,7 @@ public class Postagem {
         this.dataPostagem = dataPostagem;
         this.descricao = descricao;
         this.nomeUsuario = nomeUsuario;
+        this.comentarios = new ArrayList<>();
     }
 
     public int getCodigo() {
@@ -88,6 +95,14 @@ public class Postagem {
 
     public void setNomeUsuario(String nomeUsuario) {
         this.nomeUsuario = nomeUsuario;
+    }
+
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
     }
 
     public boolean addEntities(Object object) {
