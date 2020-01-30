@@ -19,7 +19,7 @@ public class BuscaConteudoController extends HttpServlet {
         String texto = req.getParameter("busca");
         ConteudoDao conteudoDao = new ConteudoDao();
         Gson gson = new Gson();
-        if(texto.length()>2){
+        if(texto.trim().length()>0){
             try{
                 if((conteudoDao.searchEntities(texto)!=null)&&((Busca)conteudoDao.searchEntities(texto)).getCodConteudos().isEmpty()!=true){
                     resp.getWriter().print(gson.toJson(conteudoDao.searchEntities(texto)));

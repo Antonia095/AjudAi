@@ -24,6 +24,6 @@ function geraCard(link,titulo,descricao,codigo) {
 
 
 function getBox(titulo, texto, data) {
-    return "<div class=\"mensagem-box\"><label>"+titulo+"</label><br>" +
-        "<p class=\"corpoInfo\">"+texto+"</p></p><label>"+data+"</label></div>"
+    return "<div class=\"mensagem-box\"><label class=\"titulo-not\">"+titulo+"</label><br>" +
+        "<p class=\"corpoInfo\">"+texto+"</p><label>"+data+"</label></div>"
 }

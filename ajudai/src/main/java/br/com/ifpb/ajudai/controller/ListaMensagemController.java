@@ -22,7 +22,7 @@ public class ListaMensagemController extends HttpServlet {
         try {
             List<Mensagem> mensagens = (List<Mensagem>) new MensagemDao().searchEntities("");
             if(!mensagens.isEmpty()){
-                resp.getWriter().print(new Gson().toJson(mensagens,Mensagem.class));
+                resp.getWriter().print(new Gson().toJson(mensagens));
             }else{
                 resp.getWriter().print("");
             }

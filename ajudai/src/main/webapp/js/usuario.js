@@ -134,6 +134,10 @@ $('#btExcluiConta').click(function () {
     })
 })
 
+function recuperaCodigo(identificador,pos) {
+    return identificador.slice(pos);
+}
+
 function recuperaImagem(){
     var setImagem = document.querySelector("#imageConta");
     $.ajax({
@@ -161,7 +165,14 @@ function mostraEstante(){
 function ativaBotoes(){
     var table = document.querySelector("#tabelaPesquisa");
     table.addEventListener('click',function (event) {
-        alert(event.target.id);
+        var identificador = event.target.id
+        if(identificador.indexOf("add")>=0){
+            alert(recuperaCodigo(identificador,3));
+        }else if(identificador.indexOf("btComent")>=0){
+            alert(recuperaCodigo(identificador,8));
+        }else if(identificador.indexOf("btDenun")>=0){
+            alert(recuperaCodigo(identificador,7));
+        }
     })
 }
 
@@ -227,10 +238,14 @@ function validaLink(link) {
     return link.indexOf("http") >= 0;
 }
 
-function criaListaNotificacao(lista) {
+function criaListaNotificacao(list) {
     var lista ='<ul>';
-    for (var k=lista.length-1; k>=0; k--){
-        lista+= '<li>'+getBox(lista[k].titulo, lista[k].texto, lista[k].data)+'</li>';
+    console.log(list)
+    for (var k=list.length-1; k>=0; k--){
+        var dia = (JSON.stringify(list[k].dataPublicacao.day).length==1)? "0"+JSON.stringify(list[k].dataPublicacao.day):JSON.stringify(list[k].dataPublicacao.day);
+        var mes = (JSON.stringify(list[k].dataPublicacao.month).length==1)? "0"+JSON.stringify(list[k].dataPublicacao.month):JSON.stringify(list[k].dataPublicacao.month);
+        lista+= '<li>'+getBox(list[k].titulo, list[k].texto, dia+"/"+mes+"/"+list[k].dataPublicacao.year)+'</li><br>';
+
     }
     lista+='</ul>';
     $('#corpoNotificacao').html(lista)
@@ -273,13 +288,6 @@ function conteudoAdd() {
     });
 }
 
-function setaNotificacao(){
-    var bt = document.querySelector("#body");
-    bt.addEventListener('click',function (event) {
-        console.log(event.target.id);
-    })
-}
-
 $('#btNotifi').click(function () {
     console.log("OI")
     $.ajax({
@@ -289,9 +297,10 @@ $('#btNotifi').click(function () {
         .done(function (msg) {
             if(msg.length>2){
                 criaListaNotificacao(JSON.parse(msg));
+            }else{
+                $('#corpoNotificacao').html("");
             }
         })
 })
 
-setaNotificacao();
 

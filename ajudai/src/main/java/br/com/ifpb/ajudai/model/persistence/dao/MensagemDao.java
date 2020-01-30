@@ -45,7 +45,7 @@ public class MensagemDao implements EntitiesDao {
             List<Mensagem> mensagens = new ArrayList<>();
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM MENSAGEM");
             ResultSet resultSet = statement.executeQuery();
-            if(resultSet.next()){
+            while (resultSet.next()){
                 mensagens.add(new Mensagem(resultSet.getString("titulo"),resultSet.getString("texto"),
                         resultSet.getDate("data").toLocalDate()));
             }
