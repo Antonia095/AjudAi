@@ -133,3 +133,22 @@ nav{
 .btn-card{
     border-radius: 20px 20px;
 }
+
+#modalInfo{
+    width: 470px !important;
+    height: 760px !important;
+}
+
+.img-infonot{
+    width: 95px;
+    height: 85px;
+}
+
+.mensagem-box{
+    background-color: azure;
+    border-radius: 10px 10px;
+}
+
+.corpoInfo{
+    font-size: 12px;
+}

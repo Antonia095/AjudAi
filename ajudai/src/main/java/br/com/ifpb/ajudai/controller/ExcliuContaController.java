@@ -1,5 +1,6 @@
 package br.com.ifpb.ajudai.controller;
 
+import br.com.ifpb.ajudai.model.entities.Usuario;
 import br.com.ifpb.ajudai.model.persistence.dao.UsuarioDao;
 
 import javax.servlet.ServletException;
@@ -16,7 +17,8 @@ public class ExcliuContaController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UsuarioDao usuarioDao = new UsuarioDao();
         try{
-            usuarioDao.removeEntities(req.getSession().getAttribute("usuario"));
+            Usuario usuario = (Usuario) req.getSession().getAttribute("usuario");
+            usuarioDao.exclusaoLogica(usuario.getNomeUsuario());
         }catch (SQLException | ClassNotFoundException e){
             e.printStackTrace();
         }

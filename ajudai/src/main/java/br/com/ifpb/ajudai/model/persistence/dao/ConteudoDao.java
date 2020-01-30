@@ -48,8 +48,7 @@ public class ConteudoDao implements EntitiesDao {
             PreparedStatement statement = connection.prepareStatement("" +
                     "SELECT c.codigo, c.nome, p.descricao, c.local, p.codigo AS codPostagem " +
                     "FROM CONTEUDO c, POSTAGEM p " +
-                    "WHERE (p.descricao ilike ? OR p.descricao ilike ? OR c.nome ilike ? OR c.nome ilike ?) AND " +
-                    "c.codigo = p.codConteudo");
+                    "WHERE (p.descricao ilike ? OR p.descricao ilike ? OR c.nome ilike ? OR c.nome ilike ?) AND c.codigo = p.codConteudo");
             statement.setString(1,id+"%");
             statement.setString(2,"%"+id+"%");
             statement.setString(3,id+"%");

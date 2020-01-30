@@ -5,6 +5,7 @@ import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
 import br.com.ifpb.ajudai.model.persistence.ConnectionFactory;
 
 import java.sql.*;
+import java.util.UUID;
 
 public class UsuarioDao implements EntitiesDao {
     private ConnectionFactory conFactory;
@@ -98,6 +99,19 @@ public class UsuarioDao implements EntitiesDao {
             PreparedStatement statement = connection.prepareStatement("UPDATE USUARIO SET acesso = ? WHERE nomeusuario = ?");
             statement.setBoolean(1,true);
             statement.setString(2,id);
+            return statement.executeUpdate()>0;
+        }
+    }
+
+    public boolean exclusaoLogica(String id) throws SQLException, ClassNotFoundException {
+        try(Connection connection = conFactory.getConnection()){
+            PreparedStatement statement = connection.prepareStatement("UPDATE USUARIO SET acesso = ?, nomeusuario = ?, email = ?" +
+                    " WHERE nomeusuario = ? OR email = ?");
+            statement.setBoolean(1,false);
+            statement.setString(2, String.valueOf(UUID.randomUUID()));
+            statement.setString(3,String.valueOf(UUID.randomUUID()));
+            statement.setString(4,id);
+            statement.setString(5,id);
             return statement.executeUpdate()>0;
         }
     }

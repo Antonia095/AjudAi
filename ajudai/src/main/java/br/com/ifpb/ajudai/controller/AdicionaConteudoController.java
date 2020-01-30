@@ -27,6 +27,8 @@ public class AdicionaConteudoController extends HttpServlet {
         String descricao = req.getParameter("descricao");
         String caminhoConteudo = pegaCaminhoConteudo(req);
         AdicionarConteudoUtilities.addConteudo(nome,descricao,caminhoConteudo,req);
+        req.getSession().setAttribute("conteudo",true);
+        resp.sendRedirect("pages/usuario/usuario.jsp");
     }
 
     private String pegaCaminhoConteudo(HttpServletRequest req) throws IOException, ServletException {

@@ -27,7 +27,7 @@
                     class="icone-imagem circle responsive-img"
                     src="../../${sessionScope.usuario.imagem}"
                     title="${sessionScope.usuario.nomeCompleto}"></a></li>
-            <li><a href="#"><img class="icones-nav" src="../../images/notification.svg" title="notificação"></a>
+            <li><a id="btNotifi" class="modal-trigger" href="#modalInfo"><img class="icones-nav" src="../../images/notification.svg" title="notificação"></a>
             </li>
             <li><a class="dropdown-trigger" href="#" data-target="upload"><img class="icones-nav" src="../../images/publish.svg" title="Upload"></a></li>
         </ul>
@@ -192,6 +192,18 @@
 </div>
 <!--Corpo modal conta-->
 
+<!--Corpo modal notificação-->
+<div id="modalInfo" class="modal">
+    <br>
+    <div class="center container">
+        <img class="img-infonot" src="../../images/logo.png" title="AjudAí">
+    </div>
+
+    <div class="modal-content center row" id="corpoNotificacao">
+    </div>
+</div>
+<!--Corpo modal notificação-->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
@@ -215,6 +227,11 @@
 <c:if test="${sessionScope.especialidade==true}">
     <script>
         addEspecialidades();
+    </script>
+</c:if>
+<c:if test="${sessionScope.conteudo==true}">
+    <script>
+        conteudoAdd();
     </script>
 </c:if>
 </body>

@@ -21,12 +21,15 @@ public class GatilhhosUtilities extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if(req.getParameter("valor").equals("1")){
+        if (req.getParameter("valor").equals("1")) {
             gatilhoBemVindo(req);
-        }else if((req.getParameter("valor").equals("2"))&&(req.getSession().getAttribute("especialidade")==null)){
-            gatilhoEspecialistaConcluiCadastro(req,resp);
-        }else if(req.getParameter("valor").equals("3")){
-            addEspecialidade(req,resp);
+        } else if ((req.getParameter("valor").equals("2")) && (req.getSession().getAttribute("especialidade") == null)) {
+            gatilhoEspecialistaConcluiCadastro(req, resp);
+        } else if (req.getParameter("valor").equals("3")) {
+            addEspecialidade(req, resp);
+        } else if (req.getParameter("valor").equals("5")){
+            req.getSession().setAttribute("conteudo",false);
+            resp.getWriter().print("");
         }else{
             req.getSession().setAttribute("especialidade",false);
             resp.getWriter().print("");

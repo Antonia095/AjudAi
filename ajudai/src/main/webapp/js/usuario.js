@@ -10,7 +10,8 @@ $('#search').keypress(function(event){
         })
             .done(function (msg) {
                 if(msg.length>2){
-                    console.log(JSON.parse(msg))
+                    console.log(JSON.parse(msg));
+                    geraPainel(msg)
                 }else{
                     $('#painel-direito').html('<h5>Material não encontrado</h5>');
                 }
@@ -157,6 +158,13 @@ function mostraEstante(){
         "<label class=\"titulo-estante\">Texto</label></div>"
 }
 
+function ativaBotoes(){
+    var table = document.querySelector("#tabelaPesquisa");
+    table.addEventListener('click',function (event) {
+        alert(event.target.id);
+    })
+}
+
 async function addEspecialidades() {
     const { value: text } = await Swal.fire({
         input: 'textarea',
@@ -219,18 +227,71 @@ function validaLink(link) {
     return link.indexOf("http") >= 0;
 }
 
-function geraPainel(conteudos) {
-    var painel = '<table>';
+function criaListaNotificacao(lista) {
+    var lista ='<ul>';
+    for (var k=lista.length-1; k>=0; k--){
+        lista+= '<li>'+getBox(lista[k].titulo, lista[k].texto, lista[k].data)+'</li>';
+    }
+    lista+='</ul>';
+    $('#corpoNotificacao').html(lista)
+}
 
-    for(var k=0; k<=conteudos.length; k++){
-        painel+='<tr>';
-        for (var i=1; i<3; i++){
-            painel+= '<td>' + geraCard() + '</td>';
+function geraPainel(conteudos) {
+    conteudos = JSON.parse(conteudos);
+    var painel = '<table id=\"tabelaPesquisa\">';
+    var linha = 0;
+    var controle = conteudos.nomes.length;
+    while(controle!=linha){
+        for(var k=0; k<3; k++){
+            painel+= '<td>'+geraCard(conteudos.locais[linha], conteudos.nomes[linha], conteudos.descricoes[linha],
+                conteudos.codConteudos[linha])+'</td>';
+            linha+=1;
+            if(linha==controle) break;
         }
         painel+='</tr>';
     }
     painel+='</table>';
-
     $('#painel-direito').html(painel);
+    ativaBotoes();
 }
+
+function conteudoAdd() {
+    Swal.fire({
+        title: 'Sucesso',
+        text: 'Conteudo já esta disponível para pesquisa.',
+        icon: 'success',
+        confirmButtonText: 'Ok!'
+    }).then((result) => {
+        $.ajax({
+            method: "POST",
+            url: "/ajudai/gatilho",
+            data:{valor: 5}
+        })
+            .done(function (msg) {
+                window.location.reload();
+            })
+    });
+}
+
+function setaNotificacao(){
+    var bt = document.querySelector("#body");
+    bt.addEventListener('click',function (event) {
+        console.log(event.target.id);
+    })
+}
+
+$('#btNotifi').click(function () {
+    console.log("OI")
+    $.ajax({
+        method:"POST",
+        url: "/ajudai/notificacao"
+    })
+        .done(function (msg) {
+            if(msg.length>2){
+                criaListaNotificacao(JSON.parse(msg));
+            }
+        })
+})
+
+setaNotificacao();
 
