@@ -77,4 +77,14 @@ public class ConteudoDao implements EntitiesDao {
             return resultSet.getInt("recuperaCodigo");
         }
     }
+
+    public Conteudo buscaConteudo(int codigo) throws SQLException, ClassNotFoundException {
+        try(Connection connection = conFactory.getConnection()){
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM CONTEUDO WHERE codigo = ?");
+            statement.setInt(1,codigo);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            return new Conteudo(codigo,resultSet.getString("local"));
+        }
+    }
 }

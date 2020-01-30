@@ -28,6 +28,11 @@ public class Conteudo {
         postagens = new ArrayList<>();
     }
 
+    public Conteudo(int codigo, String local) {
+        this.codigo = codigo;
+        this.local = local;
+    }
+
     public int getCodigo() {
         return codigo;
     }

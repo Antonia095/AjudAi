@@ -162,17 +162,26 @@ function mostraEstante(){
         "<label class=\"titulo-estante\">Texto</label></div>"
 }
 
+function executaBotao(botao, codigo) {
+    $.ajax({
+        method: "POST",
+        url: "/ajudai/executabotao",
+        data:{botao: botao, codigo: codigo}
+    })
+}
+
 function ativaBotoes(){
     var table = document.querySelector("#tabelaPesquisa");
     table.addEventListener('click',function (event) {
-        var identificador = event.target.id
+        var identificador = event.target.id;
         if(identificador.indexOf("add")>=0){
             alert(recuperaCodigo(identificador,3));
         }else if(identificador.indexOf("btComent")>=0){
             alert(recuperaCodigo(identificador,8));
         }else if(identificador.indexOf("btDenun")>=0){
-            
-            alert(recuperaCodigo(identificador,7));
+            executaBotao(3,recuperaCodigo(identificador,7))
+        }else{
+            console.log();
         }
     })
 }
