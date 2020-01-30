@@ -171,6 +171,7 @@ function ativaBotoes(){
         }else if(identificador.indexOf("btComent")>=0){
             alert(recuperaCodigo(identificador,8));
         }else if(identificador.indexOf("btDenun")>=0){
+            
             alert(recuperaCodigo(identificador,7));
         }
     })
