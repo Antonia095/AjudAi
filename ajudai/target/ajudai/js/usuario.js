@@ -20,6 +20,7 @@ $('#search').keypress(function(event){
     }
 });
 $('#tipoPrateleira').formSelect();
+$('#prateleiraAddSelect').formSelect();
 
 
 $(document).ready(function () {
@@ -170,30 +171,50 @@ function mensagemBotaos(icone, mensagem,titulo) {
     })
 }
 
-function executaBotao(botao, codigo, mensagem) {
+function executaBotao(botao, codigo,codPrateleira) {
     $.ajax({
         method: "POST",
         url: "/ajudai/executabotao",
-        data:{botao: botao, codigo: codigo}
+        data:{botao: botao, codigo: codigo, codPra: codPrateleira}
     })
         .done(function (msg) {
             if((msg.length>2)&&(botao==3)){
                 mensagemBotaos("info","Sua denuncia será avalidada. Obrigado(a)" +
-                    "por contribuir.", "Informação");
+                    " por contribuir.", "Informação");
+            }else if(botao==4){
+                if(msg.toUpperCase()!="EXISTEPRATELEIRA"){
+                    mensagemBotaos("warning","Você não possui prateleiras para adicionar o conteúdo. Crie uma","Aviso");
+                }else{
+                    $('#modalPrateleiraAdd').modal();
+                    $('#modalPrateleiraAdd').modal('open');
+                }
+            }else if((msg.toUpperCase()=="ADICAO")&&(botao==1)){
+                mensagemBotaos("success","Conteudo foi adicionado a sua prateleira","Sucesso");
+                $('#modalPrateleiraAdd').modal('close');
+            }else if((msg.toUpperCase()=="ESTAPRATELEIRA")&&(botao==1)){
+                mensagemBotaos("error","Conteudo não pode ser adicionado a prateleira pois ele já existe na mesma","Erro");
+                $('#modalPrateleiraAdd').modal('close');
             }
         })
 }
+
+$('#btPrateleiraAdd').click(function () {
+    var select = document.querySelector("#prateleiraAddSelect");
+    var optionvalue = select.options[select.selectedIndex].value;
+    console.log(recuperaCodigo(optionvalue,2));
+    executaBotao(1,"",recuperaCodigo(optionvalue,2));
+})
 
 function ativaBotoes(){
     var table = document.querySelector("#tabelaPesquisa");
     table.addEventListener('click',function (event) {
         var identificador = event.target.id;
         if(identificador.indexOf("add")>=0){
-            alert(recuperaCodigo(identificador,3));
+            executaBotao(4,recuperaCodigo(identificador,3));
         }else if(identificador.indexOf("btComent")>=0){
             alert(recuperaCodigo(identificador,8));
         }else if(identificador.indexOf("btDenun")>=0){
-            executaBotao(3,recuperaCodigo(identificador,7))
+            executaBotao(3,recuperaCodigo(identificador,7),"")
         }else{
             console.log();
         }

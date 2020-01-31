@@ -3,6 +3,7 @@ package br.com.ifpb.ajudai.controller;
 
 import br.com.ifpb.ajudai.controller.utilities.ExecutaBotaoUtilities;
 import br.com.ifpb.ajudai.controller.utilities.PrateleiraUtilities;
+import br.com.ifpb.ajudai.model.entities.Estante;
 import br.com.ifpb.ajudai.model.entities.Prateleira;
 import com.google.gson.Gson;
 
@@ -24,9 +25,13 @@ public class ExecutaBotaoController extends HttpServlet {
             ExecutaBotaoUtilities.adicionaConteudoPrateleira(req,resp);
         }else if(botao.equals("2")){
 
-        }else{
-            if((ExecutaBotaoUtilities.geraDenuncia(Integer.parseInt(codigo)))){
-                resp.getWriter().print("sucesso");
+        }else if(botao.equals("4")){
+            Estante estante = (Estante) req.getSession().getAttribute("estante");
+            if(!estante.getPrateleiras().isEmpty()){
+                req.getSession().setAttribute("codConteudoAdd",codigo);
+                resp.getWriter().print("existePrateleira");
+            }else{
+                resp.getWriter().print("Sua estante está vazia");
             }
         }
     }

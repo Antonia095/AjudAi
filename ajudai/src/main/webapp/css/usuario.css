@@ -157,9 +157,9 @@ nav{
     font-size: 17px;
 }
 
-modalPrateleiraAdd{
+#modalPrateleiraAdd{
     width: 390px !important;
-    height: 300px !important;
+    height: 330px !important;
 }
 
 .img-prateleiraAdd{

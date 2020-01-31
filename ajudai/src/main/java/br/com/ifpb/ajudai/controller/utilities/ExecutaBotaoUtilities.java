@@ -39,21 +39,19 @@ public class ExecutaBotaoUtilities {
     }
 
     public static void adicionaConteudoPrateleira(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        if(req.getSession().getAttribute("listaEstante")==null){
-           List<Prateleira> prateleiras = PrateleiraUtilities.recuperaPrateleiras(req);
-           if(prateleiras!=null){
-               req.getSession().setAttribute("listaEstante",true);
-               resp.getWriter().print(new Gson().toJson(prateleiras));
-           }
-        }else{
-            try{
-                new ConteudoEstanteDao().addEntities(new ConteudoEstante(PrateleiraUtilities.idEstante(req),
-                                Integer.parseInt(req.getParameter("codPra")),Integer.parseInt(req.getParameter("codigo"))));
-            }catch (SQLException | ClassNotFoundException e){
-                e.printStackTrace();
+        int codPrateleira = Integer.parseInt(req.getParameter("codPra"));
+        int codConteudo = Integer.parseInt(String.valueOf(req.getSession().getAttribute("codConteudoAdd")));
+        ConteudoEstanteDao conteudoEstanteDao = new ConteudoEstanteDao();
+        try{
+            if(conteudoEstanteDao.existeNaEstante(codPrateleira,codConteudo)){
+                resp.getWriter().print("estaprateleira");
+            }else{
+                conteudoEstanteDao.addEntities(new ConteudoEstante(PrateleiraUtilities.idEstante(req),codPrateleira,codConteudo));
+                resp.getWriter().print("adicao");
             }
-            req.getSession().setAttribute("listaEstante",null);
-            resp.getWriter().print("adicao");
+        }catch (SQLException | ClassNotFoundException e){
+            e.printStackTrace();
         }
+
     }
 }

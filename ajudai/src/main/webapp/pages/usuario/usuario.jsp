@@ -212,7 +212,14 @@
     </div>
     <div class="modal-content container">
         <br>
-        <select id="prateleiraAdd"></select>
+        <select id="prateleiraAddSelect">
+            <c:forEach items="${sessionScope.estante.prateleiras}" var="list">
+                <option value="${list.codString()}">${list.nome.toUpperCase()}</option>
+            </c:forEach>
+        </select>
+    </div>
+    <div class="modal-footer">
+        <button id="btPrateleiraAdd" class="btn">Adicionar</button>
     </div>
 </div>
 <!--Corpo modal escolha prateleira-->

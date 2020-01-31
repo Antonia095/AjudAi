@@ -6,6 +6,7 @@ import br.com.ifpb.ajudai.model.persistence.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ConteudoEstanteDao implements EntitiesDao {
@@ -42,5 +43,16 @@ public class ConteudoEstanteDao implements EntitiesDao {
     @Override
     public Object searchEntities(String id) throws SQLException, ClassNotFoundException {
         return null;
+    }
+
+    public boolean existeNaEstante(int codPrateteleira, int codConteudo) throws SQLException, ClassNotFoundException {
+        try(Connection connection = conFactory.getConnection()) {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM PRATELEIRACONTEUDO WHERE codprateleira = ?" +
+                    "AND codconteudo = ?");
+            statement.setInt(1,codPrateteleira);
+            statement.setInt(2,codConteudo);
+            ResultSet resultSet = statement.executeQuery();
+            return resultSet.next();
+        }
     }
 }
