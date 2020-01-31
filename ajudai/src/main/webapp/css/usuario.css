@@ -156,3 +156,17 @@ nav{
 .titulo-not{
     font-size: 17px;
 }
+
+modalPrateleiraAdd{
+    width: 390px !important;
+    height: 300px !important;
+}
+
+.img-prateleiraAdd{
+    height: 90px;
+    width: 100px;
+}
+
+.pratletter{
+    font-family: 'Ubuntu Condensed';
+}

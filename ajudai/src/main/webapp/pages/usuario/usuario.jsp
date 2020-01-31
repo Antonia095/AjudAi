@@ -204,6 +204,19 @@
 </div>
 <!--Corpo modal notificação-->
 
+<!--Corpo modal escolha prateleira-->
+<div id="modalPrateleiraAdd" class="modal">
+    <div class="center container">
+        <img src="../../images/logo.png" class="img-prateleiraAdd">
+        <h5 class="pratletter">Escolha prateleira</h5>
+    </div>
+    <div class="modal-content container">
+        <br>
+        <select id="prateleiraAdd"></select>
+    </div>
+</div>
+<!--Corpo modal escolha prateleira-->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>

@@ -162,13 +162,27 @@ function mostraEstante(){
         "<label class=\"titulo-estante\">Texto</label></div>"
 }
 
-function executaBotao(botao, codigo, mensagem) {
+function mensagemBotaos(icone, mensagem,titulo) {
+    Swal.fire({
+        icon: icone,
+        title: titulo,
+        text: mensagem,
+    })
+}
+
+function executaBotao(botao, codigo,codPrateleira) {
     $.ajax({
         method: "POST",
         url: "/ajudai/executabotao",
-        data:{botao: botao, codigo: codigo}
+        data:{botao: botao, codigo: codigo, codPra: codPrateleira}
     })
         .done(function (msg) {
+            if((msg.length>2)&&(botao==3)){
+                mensagemBotaos("info","Sua denuncia será avalidada. Obrigado(a)" +
+                    " por contribuir.", "Informação");
+            }else if((msg.toUpperCase()=="ADICAO")&&(botao==1)){
+
+            }
         })
 }
 
@@ -177,11 +191,11 @@ function ativaBotoes(){
     table.addEventListener('click',function (event) {
         var identificador = event.target.id;
         if(identificador.indexOf("add")>=0){
-            alert(recuperaCodigo(identificador,3));
+            executaBotao(1,recuperaCodigo(identificador,3));
         }else if(identificador.indexOf("btComent")>=0){
             alert(recuperaCodigo(identificador,8));
         }else if(identificador.indexOf("btDenun")>=0){
-            executaBotao(3,recuperaCodigo(identificador,7))
+            executaBotao(3,recuperaCodigo(identificador,7),"")
         }else{
             console.log();
         }

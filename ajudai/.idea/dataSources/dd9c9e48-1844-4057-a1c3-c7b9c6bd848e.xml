@@ -3,21 +3,21 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.17">
     <root id="1">
       <ServerVersion>12.1</ServerVersion>
-      <StartupTime>1580346536</StartupTime>
+      <StartupTime>1580417204</StartupTime>
     </root>
     <database id="2" parent="1" name="AjudAi">
       <ObjectId>16390</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>925</IntrospectionStateNumber>
+      <IntrospectionStateNumber>952</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|41555|41557|1
+      <Relations>sequence|table|41420|41422|1
 sequence|table|41433|41435|1
 sequence|table|41449|41451|1
-sequence|table|41420|41422|1
 sequence|table|41490|41492|1
 sequence|table|41511|41513|1
 sequence|table|41527|41529|1
-sequence|table|41535|41537|1
+sequence|table|41555|41557|1
+sequence|table|41564|41566|1
 </Relations>
     </database>
     <database id="3" parent="1" name="Loja">
@@ -78,7 +78,7 @@ sequence|table|41535|41537|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>926</IntrospectionStateNumber>
+      <IntrospectionStateNumber>953</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="17" parent="2" name="heap">
@@ -153,8 +153,8 @@ sequence|table|41535|41537|1
       <DataType>integer</DataType>
     </sequence>
     <sequence id="26" parent="16" name="alerta_id_seq">
-      <ObjectId>41535</ObjectId>
-      <StateNumber>915</StateNumber>
+      <ObjectId>41564</ObjectId>
+      <StateNumber>938</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
@@ -214,9 +214,9 @@ sequence|table|41535|41537|1
       <StateNumber>915</StateNumber>
     </table>
     <table id="34" parent="16" name="alerta">
-      <ObjectId>41537</ObjectId>
+      <ObjectId>41566</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>915</StateNumber>
+      <StateNumber>938</StateNumber>
     </table>
     <table id="35" parent="16" name="areaespecialista">
       <ObjectId>41410</ObjectId>
@@ -351,51 +351,51 @@ sequence|table|41535|41537|1
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>915</StateNumber>
+      <StateNumber>938</StateNumber>
       <DefaultExpression>nextval(&apos;alerta_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
     <column id="57" parent="34" name="conteudo">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <StateNumber>915</StateNumber>
+      <DataType>varchar(200)|0s</DataType>
+      <StateNumber>938</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="58" parent="34" name="idcomentario">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>915</StateNumber>
+      <StateNumber>938</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="59" parent="34" name="codpostagem">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>915</StateNumber>
+      <StateNumber>938</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="60" parent="34" name="codadmin">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>915</StateNumber>
+      <StateNumber>938</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="61" parent="34" name="pk_alerta">
-      <ObjectId>41541</ObjectId>
-      <StateNumber>915</StateNumber>
+      <ObjectId>41570</ObjectId>
+      <StateNumber>938</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="62" parent="34" name="pk_alerta">
-      <ObjectId>41542</ObjectId>
-      <StateNumber>915</StateNumber>
+      <ObjectId>41571</ObjectId>
+      <StateNumber>938</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>pk_alerta</UnderlyingIndexName>
     </key>
     <foreign-key id="63" parent="34" name="fk1_alerta">
-      <ObjectId>41543</ObjectId>
-      <StateNumber>915</StateNumber>
+      <ObjectId>41572</ObjectId>
+      <StateNumber>938</StateNumber>
       <ColNames>idcomentario
 codpostagem</ColNames>
       <RefTableId>41513</RefTableId>
@@ -408,8 +408,8 @@ codpostagem</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
     <foreign-key id="64" parent="34" name="fk2_alerta">
-      <ObjectId>41548</ObjectId>
-      <StateNumber>915</StateNumber>
+      <ObjectId>41577</ObjectId>
+      <StateNumber>938</StateNumber>
       <ColNames>codadmin</ColNames>
       <RefTableId>41529</RefTableId>
       <RefColPositions>1</RefColPositions>

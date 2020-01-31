@@ -162,12 +162,26 @@ function mostraEstante(){
         "<label class=\"titulo-estante\">Texto</label></div>"
 }
 
-function executaBotao(botao, codigo) {
+function mensagemBotaos(icone, mensagem,titulo) {
+    Swal.fire({
+        icon: icone,
+        title: titulo,
+        text: mensagem,
+    })
+}
+
+function executaBotao(botao, codigo, mensagem) {
     $.ajax({
         method: "POST",
         url: "/ajudai/executabotao",
         data:{botao: botao, codigo: codigo}
     })
+        .done(function (msg) {
+            if((msg.length>2)&&(botao==3)){
+                mensagemBotaos("info","Sua denuncia será avalidada. Obrigado(a)" +
+                    "por contribuir.", "Informação");
+            }
+        })
 }
 
 function ativaBotoes(){
