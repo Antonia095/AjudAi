@@ -10,6 +10,10 @@ $(document).ready(function () {
 });
 
 $('#btLogin').click(function () {
+    login();
+});
+
+function login(){
     var usEmail = $('#usEmail').val();
     var senha = $('#senha').val();
     $.ajax({
@@ -25,6 +29,18 @@ $('#btLogin').click(function () {
                 $('#situacao').html(msg);
             }
         })
+}
+
+$('#usEmail').keypress(function (event) {
+    if(event.which==13){
+        login();
+    }
 });
+
+$('#senha').keypress(function (event) {
+    if(event.which==13){
+        login();
+    }
+})
 
 

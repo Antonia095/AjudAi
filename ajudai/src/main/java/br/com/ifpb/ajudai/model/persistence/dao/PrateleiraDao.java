@@ -1,5 +1,6 @@
 package br.com.ifpb.ajudai.model.persistence.dao;
 
+import br.com.ifpb.ajudai.model.entities.Conteudo;
 import br.com.ifpb.ajudai.model.entities.Prateleira;
 import br.com.ifpb.ajudai.model.interfaces.EntitiesDao;
 import br.com.ifpb.ajudai.model.persistence.ConnectionFactory;
@@ -44,7 +45,29 @@ public class PrateleiraDao implements EntitiesDao {
 
     @Override
     public Object searchEntities(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        try(Connection connection = conFactory.getConnection()){
+            List<Conteudo> conteudos = new ArrayList<>();
+            Prateleira prateleira = new Prateleira();
+            PreparedStatement statement = connection.prepareStatement("" +
+                    "SELECT pc.codprateleira, c.nome, c.local, p.descricao, p.tipo, p.datacriacao, pt.descricao AS descCont " +
+                    "FROM prateleiraconteudo pc, conteudo c, prateleira p, postagem pt" +
+                    " WHERE pc.codprateleira = ? AND pc.codconteudo = c.codigo AND p.codigo = pc.codprateleira AND  c.codigo = pt.codigo");
+            int cont = 0;
+            statement.setInt(1,Integer.parseInt(id));
+            ResultSet resultSet = statement.executeQuery();
+            while(resultSet.next()){
+                if(cont==0){
+                    prateleira.setCodigo(resultSet.getInt("codprateleira"));
+                    prateleira.setDescricao(resultSet.getString("descricao"));
+                    prateleira.setTipo(resultSet.getString("tipo"));
+                    cont++;
+                }
+                conteudos.add(new Conteudo(resultSet.getString("nome"),resultSet.getString("local"),
+                        resultSet.getString("desCont")));
+            }
+            prateleira.setConteudos(conteudos);
+            return prateleira;
+        }
     }
 
     public List<Prateleira> listaPrateleiras(int id) throws SQLException, ClassNotFoundException {

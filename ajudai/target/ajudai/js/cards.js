@@ -27,3 +27,25 @@ function getBox(titulo, texto, data) {
     return "<div class=\"mensagem-box\"><label class=\"titulo-not\">"+titulo+"</label><br>" +
         "<p class=\"corpoInfo\">"+texto+"</p><label>"+data+"</label></div>"
 }
+
+function setaConteudos(conteudos) {
+    conteudos = JSON.parse(conteudos);
+    var painel = '<table id=\"tabelaPesquisa\">';
+    var linha = 0;
+    var controle = conteudos.nomes.length;
+    while(controle!=linha){
+        for(var k=0; k<3; k++){
+            painel+= '<td>'+geraCard(conteudos[linha].local, conteudos[linha].nome,conteudos[linha].descricao,"")+'</td>';
+            linha+=1;
+            if(linha==controle) break;
+        }
+        painel+='</tr>';
+    }
+    painel+='</table>';
+    return painel;
+}
+
+
+function estante() {
+
+}

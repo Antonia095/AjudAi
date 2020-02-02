@@ -33,6 +33,8 @@ public class ExecutaBotaoController extends HttpServlet {
             }else{
                 resp.getWriter().print("Sua estante está vazia");
             }
+        }else if(botao.equals("3")){
+
         }
     }
 

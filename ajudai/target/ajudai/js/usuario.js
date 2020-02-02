@@ -159,8 +159,7 @@ function resetaMensagemInicio() {
 }
 
 function mostraEstante(){
-    var navEstante = "<div class=\"pos-direita\"><button class=\"btn\">Deletar</button><br><br>" +
-        "<label class=\"titulo-estante\">Texto</label></div>"
+
 }
 
 function mensagemBotaos(icone, mensagem,titulo) {
@@ -347,5 +346,24 @@ $('#btNotifi').click(function () {
             }
         })
 })
+
+function escutaPrateleira() {
+    var estante = document.querySelector("#listaEstante");
+    estante.addEventListener('click',function (event) {
+        var prateleira = event.target.id;
+        if(prateleira.length>1){
+            $.ajax({
+                method: "POST",
+                url: "/ajudai/mostraprateleira",
+                data:{valor: 1, codPrateleira: recuperaCodigo(prateleira,2)}
+            })
+                .done(function (msg) {
+                    console.log(msg);
+                })
+        }
+    })
+}
+
+escutaPrateleira();
 
 

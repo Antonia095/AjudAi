@@ -7,25 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103565c1-9d32-46b0-ad58-25ce38f8826f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/MostraPrateleira.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd9c9e48-1844-4057-a1c3-c7b9c6bd848e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd9c9e48-1844-4057-a1c3-c7b9c6bd848e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd9c9e48-1844-4057-a1c3-c7b9c6bd848e/storage_v2/_src_/database/AjudAi.4Gr3dA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd9c9e48-1844-4057-a1c3-c7b9c6bd848e/storage_v2/_src_/database/AjudAi.4Gr3dA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/ExecutaBotaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/ExecutaBotaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/ConteudoEstanteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/ConteudoEstanteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/usuario.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/usuario.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entities/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/entities/Conteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/usuario.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/usuario/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/usuario/usuario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ajudai.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/META-INF/ajudai.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/ExecutaBotaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/ExecutaBotaoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai/css/usuario.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/css/usuario.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/model/entities/Conteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/model/entities/Conteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/WEB-INF/classes/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ajudai/js/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/js/cards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ajudai/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/js/usuario.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ajudai/pages/usuario/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ajudai/pages/usuario/usuario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ajudai.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/ExecutaBotaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/ExecutaBotaoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entities/Conteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/entities/Conteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +249,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -317,7 +316,9 @@
       <workItem from="1580401810661" duration="6738000" />
       <workItem from="1580417246247" duration="210000" />
       <workItem from="1580417561081" duration="17523000" />
-      <workItem from="1580466666901" duration="5920000" />
+      <workItem from="1580466666901" duration="12113000" />
+      <workItem from="1580480591378" duration="2215000" />
+      <workItem from="1580608020929" duration="647000" />
     </task>
     <servers />
   </component>
@@ -333,10 +334,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="418" y="217" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1580430846547" />
-    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1580424194986">
+    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1580479762009">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1580424194986" />
+    <state x="768" y="271" width="374" height="570" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1580479762009" />
     <state x="555" y="220" width="800" height="672" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1579399340403">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -349,82 +350,82 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.40.1920.1040@0.40.1920.1040" timestamp="1580430820694" />
-    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl" timestamp="1580394627936">
+    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl" timestamp="1580496074641">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1580394627936" />
-    <state width="1601" height="274" key="GridCell.Tab.0.bottom" timestamp="1580472658187">
+    <state x="743" y="317" width="424" height="479" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1580496074641" />
+    <state width="1601" height="274" key="GridCell.Tab.0.bottom" timestamp="1580496076722">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658187" />
-    <state width="1601" height="274" key="GridCell.Tab.0.center" timestamp="1580472658185">
+    <state width="1601" height="274" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076721" />
+    <state width="1601" height="274" key="GridCell.Tab.0.center" timestamp="1580496076719">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658185" />
-    <state width="1601" height="274" key="GridCell.Tab.0.left" timestamp="1580472658185">
+    <state width="1601" height="274" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076719" />
+    <state width="1601" height="274" key="GridCell.Tab.0.left" timestamp="1580496076719">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658185" />
-    <state width="1601" height="274" key="GridCell.Tab.0.right" timestamp="1580472658186">
+    <state width="1601" height="274" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076719" />
+    <state width="1601" height="274" key="GridCell.Tab.0.right" timestamp="1580496076721">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658186" />
-    <state width="1601" height="274" key="GridCell.Tab.1.bottom" timestamp="1580472658191">
+    <state width="1601" height="274" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076721" />
+    <state width="1601" height="274" key="GridCell.Tab.1.bottom" timestamp="1580496076727">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658191" />
-    <state width="1601" height="274" key="GridCell.Tab.1.center" timestamp="1580472658189">
+    <state width="1601" height="274" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076727" />
+    <state width="1601" height="274" key="GridCell.Tab.1.center" timestamp="1580496076725">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658189" />
-    <state width="1601" height="274" key="GridCell.Tab.1.left" timestamp="1580472658188">
+    <state width="1601" height="274" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076725" />
+    <state width="1601" height="274" key="GridCell.Tab.1.left" timestamp="1580496076724">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658188" />
-    <state width="1601" height="274" key="GridCell.Tab.1.right" timestamp="1580472658190">
+    <state width="1601" height="274" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076724" />
+    <state width="1601" height="274" key="GridCell.Tab.1.right" timestamp="1580496076725">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658190" />
-    <state width="1601" height="274" key="GridCell.Tab.2.bottom" timestamp="1580472658195">
+    <state width="1601" height="274" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076725" />
+    <state width="1601" height="274" key="GridCell.Tab.2.bottom" timestamp="1580496076730">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658195" />
-    <state width="1601" height="274" key="GridCell.Tab.2.center" timestamp="1580472658194">
+    <state width="1601" height="274" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076730" />
+    <state width="1601" height="274" key="GridCell.Tab.2.center" timestamp="1580496076730">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658194" />
-    <state width="1601" height="274" key="GridCell.Tab.2.left" timestamp="1580472658194">
+    <state width="1601" height="274" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076730" />
+    <state width="1601" height="274" key="GridCell.Tab.2.left" timestamp="1580496076729">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658194" />
-    <state width="1601" height="274" key="GridCell.Tab.2.right" timestamp="1580472658195">
+    <state width="1601" height="274" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076729" />
+    <state width="1601" height="274" key="GridCell.Tab.2.right" timestamp="1580496076730">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658195" />
-    <state width="1601" height="274" key="GridCell.Tab.3.bottom" timestamp="1580472658193">
+    <state width="1601" height="274" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580496076730" />
+    <state width="1601" height="274" key="GridCell.Tab.3.bottom" timestamp="1580474257047">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658193" />
-    <state width="1601" height="274" key="GridCell.Tab.3.center" timestamp="1580472658192">
+    <state width="1601" height="274" key="GridCell.Tab.3.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1580474257047" />
+    <state width="1601" height="274" key="GridCell.Tab.3.center" timestamp="1580474257045">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658192" />
-    <state width="1601" height="274" key="GridCell.Tab.3.left" timestamp="1580472658192">
+    <state width="1601" height="274" key="GridCell.Tab.3.center/0.40.1920.1040@0.40.1920.1040" timestamp="1580474257045" />
+    <state width="1601" height="274" key="GridCell.Tab.3.left" timestamp="1580474257045">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658192" />
-    <state width="1601" height="274" key="GridCell.Tab.3.right" timestamp="1580472658193">
+    <state width="1601" height="274" key="GridCell.Tab.3.left/0.40.1920.1040@0.40.1920.1040" timestamp="1580474257045" />
+    <state width="1601" height="274" key="GridCell.Tab.3.right" timestamp="1580474257046">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1601" height="274" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580472658193" />
+    <state width="1601" height="274" key="GridCell.Tab.3.right/0.40.1920.1040@0.40.1920.1040" timestamp="1580474257046" />
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1580404465230">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.40.1920.1040@0.40.1920.1040" timestamp="1580404465230" />
-    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1580466667443">
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1580480601221">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1580466667443" />
+    <state x="643" y="386" key="com.intellij.ide.util.TipDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1580480601221" />
     <state x="376" y="257" width="1157" height="598" key="new project wizard" timestamp="1580238415742">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -534,6 +535,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/controller/utilities/ExecutaBotaoUtilities.java</url>
           <line>52</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/ifpb/ajudai/model/persistence/dao/PrateleiraDao.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

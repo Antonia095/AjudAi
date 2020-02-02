@@ -9,6 +9,8 @@ public class Conteudo {
     private int codigo;
     private String nome;
     private String local;
+    private String descricao;
+
     private List<Postagem> postagens;
 
     public Conteudo() {
@@ -22,7 +24,14 @@ public class Conteudo {
         postagens = new ArrayList<>();
     }
 
-    public Conteudo(String nome, String local) {
+    public Conteudo(String nome, String local, String descricao) {
+        this.nome = nome;
+        this.local = local;
+        this.descricao = descricao;
+        postagens = new ArrayList<>();
+    }
+
+    public Conteudo(String nome, String local){
         this.nome = nome;
         this.local = local;
         postagens = new ArrayList<>();
@@ -63,5 +72,13 @@ public class Conteudo {
 
     public void setPostagens(List<Postagem> postagens) {
         this.postagens = postagens;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

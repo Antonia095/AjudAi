@@ -103,3 +103,8 @@
     font-family: 'Liberation Serif';
     font-size: 15px;
 }
+
+.textoDescPrat{
+    font-size: 14px;
+    font-style: italic;
+}
